@@ -1,0 +1,29 @@
+:root {
+    --primary: #303437;
+    --secondary: #FFFFFF;
+    --aside: #F4F4F4;
+    --dance: hsl(260, 100%, 50%);
+    --wellness: hsl(337, 91%, 45%);
+    --events: hsl(228, 70%, 53%);
+    --writing: hsl(300, 100%, 35%);
+    --tech: hsl(204, 64%, 40%);
+
+    @media (prefers-color-scheme: dark) {
+        --primary: #FFFFFF;
+        --secondary: #303437;
+        --aside: #404447;
+        --dance: hsl(260, 100%, 90%);
+        --wellness: hsl(337, 91%, 85%);
+        --events: hsl(228, 70%, 80%);
+        --writing: hsl(300, 100%, 90%);
+        --tech: hsl(204, 64%, 80%);
+    }
+}
+
+$break-small: 'only screen and (min-width: 768px)';
+$break-large: 'only screen and (min-width: 1200px)';
+
+$font: "Helvetica", sans-serif;
+
+$primary: var(--primary);
+$secondary: var(--secondary);

@@ -1,3 +1,26 @@
 import React from "react"
 
-export default () => <div>Hello world!</div>
+import SiteTitle from "../components/site-title"
+import Navigation from "../components/navigation"
+import Footer from "../components/footer"
+
+import "../styles/index.scss"
+import "../styles/global.scss"
+import Styles from "./index.module.scss"
+
+const FrontPage = () => {
+    return (
+        <main className={Styles.mainContainer}>
+            <h1 className={Styles.headingLarge}>Hello, my name is <br />
+            <SiteTitle />
+            </h1>
+            <h2 className={Styles.headingMedium}>I am a multipotentialite, which means I do a little bit of a lot of things.</h2>
+            <p>You probably stumbled upon here looking for specific info about certain work that I do. As mentioned, I do a little bit of a lot of things, and if you read up about everything I do, it can get a bit ... overwhelming. So ...</p>
+            <h2 className={Styles.headingMedium}>Let me help you find the right Jessica you may be looking for!</h2>
+            <Navigation />
+            <Footer />
+        </main>
+    )
+}
+
+export default FrontPage

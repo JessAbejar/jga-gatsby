@@ -1,0 +1,57 @@
+@import "../styles/global.scss";
+
+.mainContainer {
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 1rem;
+    padding-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
+.headingLarge {
+  font-family: $font;
+  font-size: 1.375rem;
+  line-height: 1.154rem;
+  color: $primary;
+  font-weight: bold;
+  
+  @media #{$break-small} {
+    font-size: 2rem;  
+    line-height: 1.25rem;
+  }
+  
+  @media #{$break-large} {
+    font-size: 2.25rem;  
+  }
+}
+.headingMedium {
+  font-family: $font;
+  font-size: 1.375rem;
+  line-height: 1.363rem;
+  color: $primary;
+  font-weight: bold;
+  
+  @media #{$break-small} {
+    font-size: 1.5rem;  
+    line-height: 1.25rem;
+  }
+  
+  @media #{$break-large} {
+    font-size: 1.75rem;  
+  }
+}
+p {
+  font-family: $font;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: $primary;
+      
+  @media #{$break-small} {
+    line-height: 1.3rem;  
+  }
+  
+  @media #{$break-large} {
+    line-height: 1.375rem;  
+  }
+}

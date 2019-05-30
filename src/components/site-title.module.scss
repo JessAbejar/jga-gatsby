@@ -1,0 +1,20 @@
+@import "../styles/global.scss";
+
+.siteTitle {
+    font-size: 2.25rem;
+    line-height: 3.25rem;
+    color: $primary;
+    font-weight: normal;
+    font-family: $font;
+    text-decoration: none;
+
+    @media #{$break-small} {
+        font-size: 2.75rem; 
+        line-height: 3.75rem; 
+    }
+
+    @media #{$break-large} {
+        font-size: 3.25rem;
+        line-height: 4.25rem;  
+    }
+}
