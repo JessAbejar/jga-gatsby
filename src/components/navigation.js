@@ -1,13 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const PageTab = ({ pageName }) => {
+import styles from "./navigation.module.scss"
+
+const PageTag = (props) => {
     return (
-        <Link to={`/${pageName}`}>
-            <div 
-                className={`pageTag ${pageName}`}
-            >
-                {pageName}
+        <Link to={`/${props.pageName}`}>
+            <div className={styles.pageTag} style={{backgroundColor: props.color}}>
+                {props.pageName}
             </div>
         </Link>
     )
@@ -15,23 +15,29 @@ const PageTab = ({ pageName }) => {
 
 const Navigation = () => {
     return (
-        <nav className="navMenu">
-            <PageTab 
+        <nav className={styles.navMenu}>
+            <PageTag 
+            color="var(--dance)"
             pageName="dance"
             />
-            <PageTab 
+            <PageTag 
+            color="var(--wellness)"
             pageName="wellness"
             />
-            <PageTab 
+            <PageTag 
+            color="var(--events)"
             pageName="events"
             />
-            <PageTab 
+            <PageTag 
+            color="var(--writing)"
             pageName="writing"
             />
-            <PageTab 
+            <PageTag 
+            color="var(--tech)"
             pageName="tech"
             />
-            <PageTab 
+            <PageTag 
+            color="var(--primary)"
             pageName="about"
             />
         </nav>
