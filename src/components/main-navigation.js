@@ -1,0 +1,47 @@
+import React from "react"
+import { Link } from "gatsby"
+
+import styles from "./main-navigation.module.scss"
+
+const PageTag = (props) => {
+    return (
+        <Link to={`/${props.pageName}`}>
+            <div className={styles.pageTag} style={{backgroundColor: props.color}}>
+                {props.pageName}
+            </div>
+        </Link>
+    )
+}
+
+const MainNavigation = (props) => {
+    return (
+        <nav>
+            <div className={styles.navMenu}>
+                <PageTag 
+                color="var(--dance)"
+                pageName="dance"
+                />
+                <PageTag 
+                color="var(--wellness)"
+                pageName="wellness"
+                />
+                <PageTag 
+                color="var(--events)"
+                pageName="events"
+                />
+                <PageTag 
+                color="var(--writing)"
+                pageName="writing"
+                />
+                <PageTag 
+                color="var(--tech)"
+                pageName="tech"
+                />
+            </div>
+            {props.children}
+        </nav>
+    )
+}
+
+export default MainNavigation
+

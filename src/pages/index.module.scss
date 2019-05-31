@@ -8,6 +8,11 @@
 
     display: flex;
     flex-direction: column;
+
+    @media #{$break-small} {
+      height: 100vh;
+      justify-content: center;
+    }
 }
 .headingLarge {
   font-family: $font;
@@ -18,11 +23,12 @@
   
   @media #{$break-small} {
     font-size: 2rem;  
-    line-height: 1.25rem;
+    line-height: 2rem;
   }
   
   @media #{$break-large} {
     font-size: 2.25rem;  
+    line-height: 2.25rem;
   }
 }
 .headingMedium {
@@ -39,6 +45,7 @@
   
   @media #{$break-large} {
     font-size: 1.75rem;  
+    line-height: 1.75rem;
   }
 }
 p {
@@ -52,6 +59,7 @@ p {
   }
   
   @media #{$break-large} {
+    font-size: 1.1rem;
     line-height: 1.375rem;  
   }
 }

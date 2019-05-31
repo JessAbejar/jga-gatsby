@@ -1,5 +1,5 @@
 :root {
-    --primary: #303437;
+    --primary: #373737;
     --secondary: #FFFFFF;
     --aside: #F4F4F4;
     --dance: hsl(260, 100%, 50%);
@@ -10,7 +10,7 @@
 
     @media (prefers-color-scheme: dark) {
         --primary: #FFFFFF;
-        --secondary: #303437;
+        --secondary: #373737;
         --aside: #404447;
         --dance: hsl(260, 100%, 90%);
         --wellness: hsl(337, 91%, 85%);
@@ -27,3 +27,6 @@ $font: "Helvetica", sans-serif;
 
 $primary: var(--primary);
 $secondary: var(--secondary);
+$aside: var(--aside);
+
+$border: 3px solid;
