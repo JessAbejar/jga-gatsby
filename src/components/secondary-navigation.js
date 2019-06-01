@@ -7,14 +7,11 @@ const SecondaryNavigation = () => {
     return (
         <div className={styles.secondaryNav}>
         <span>Other links:</span>
-        <Link to="/blog">
+        <Link to="/blog" activeClassName={styles.active}>
             Blog
         </Link>
-        <Link to="/about">
+        <Link to="/about" activeClassName={styles.active}>
             About
-        </Link>
-        <Link to="/about">
-            Contact
         </Link>
         </div>
     )

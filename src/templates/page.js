@@ -34,37 +34,19 @@ const WorkSections = sections.map(section => (
 ))
 */
 
-const ConnectLinks = ({ links, color}) => {
-    return (
-        links.map((link,index) => (
-            <div className={styles.connectLinks} key={index}>
-                <a href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.label} style={{color: color}} >
-                    {link.icon} {link.text}
-                </a> 
-            </div>
-        ))
-    )
-}
-
 const Page = (props) => {
     return (
         <Layout>
             <main id="main">
-                <article>
+                <article id="mainArticle">
                     <h1 className={styles.pageTitle} style={{color: props.color}}>{props.main.title}</h1>
                     <div dangerouslySetInnerHTML={props.main.content} />
                 </article>
-                <aside className={styles.aside}>
+                <aside id="aside" className={styles.aside}>
                     <h2 className={styles.asideHeading}>{props.aside.heading}</h2>
                     <AsideItems items ={props.aside.items} color={props.color}/>
                 </aside>
-                <section id="work">
-                    {props.children}
-                </section>
-                <section id="connect">
-                    <h2 className={styles.connectHeading}>Connect With Me</h2>
-                    <ConnectLinks links={props.links} color={props.color}/>
-                </section>
+                {props.children}
             </main>
         </Layout>
     )

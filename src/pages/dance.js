@@ -1,5 +1,11 @@
 import React from "react"
+
 import Page from "../templates/page"
+import ConnectSection from "../components/connect"
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLink } from "@fortawesome/free-solid-svg-icons"
+import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons"
 
 const data = {
     main: {
@@ -49,25 +55,25 @@ const data = {
         {
             url: "https://themovingprayer.com",
             label: "The Moving Prayer Website",
-            icon: "",
+            icon: <FontAwesomeIcon icon={faLink} />,
             text: "themovingprayer.com",
         }, 
         {
             url: "https://youtube.com/themovingprayer",
             label: "The Moving Prayer YouTube Channel",
-            icon: "",
+            icon: <FontAwesomeIcon icon={faYoutube} />,
             text: "themovingprayer",
         },
         {
             url: "https://instagram.com/themovingprayer",
             label: "The Moving Prayer Instagram Page",
-            icon: "",
+            icon: <FontAwesomeIcon icon={faInstagram} />,
             text: "themovingprayer",
         }, 
         {
             url: "https://facebook.com/themovingprayer",
             label: "The Moving Prayer Facebook Page",
-            icon: "",
+            icon: <FontAwesomeIcon icon={faFacebook} />,
             text: "themovingprayer",
         },
     ]
@@ -79,8 +85,12 @@ const DancePage = () => {
             color="var(--dance)"
             main={data.main}
             aside={data.aside}
-            links={data.links}
-        />
+        >
+            <ConnectSection
+                links={data.links} 
+                color="var(--dance)"
+            />
+        </Page>
     )
 }
 
