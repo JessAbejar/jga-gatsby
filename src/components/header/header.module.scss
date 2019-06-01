@@ -1,4 +1,4 @@
-@import "../styles/global.scss";
+@import "../../styles/global.scss";
 
 .visuallyHidden {
     border: 0;
@@ -11,7 +11,6 @@
     width: 1px;
     white-space: nowrap; /* 1 */
   }
-  
 .visuallyHidden.focusable:active,
 .visuallyHidden.focusable:focus {
     clip: auto;

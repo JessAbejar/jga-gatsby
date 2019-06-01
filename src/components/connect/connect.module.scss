@@ -1,10 +1,9 @@
-@import "../styles/global.scss";
+@import "../../styles/global.scss";
 
 .connect {
     margin: 2rem 0;
     padding-top: 2rem;
 }
-
 .connectHeading {
     font-family: $font;
     font-size: 1.375rem;
@@ -14,18 +13,14 @@
     @media #{$break-small} {
       font-size: 2rem;  
     }
-    
     @media #{$break-large} {
       font-size: 2.25rem;  
     }
 }
-
-
-
 .connectLinks {
     margin-bottom: 1rem;
-    margin-left: 1rem;
-    
+    margin-left: 1rem;   
+
     a,
     a:hover,
     a:visited {
@@ -34,12 +29,10 @@
         text-decoration: none;
         font-weight: bold;
     }
-  
     a:hover {
         font-family: $font;
         font-weight: bold;
     }
-
     &:hover {
         transform: translate(10px);
         transition: all .5s linear;

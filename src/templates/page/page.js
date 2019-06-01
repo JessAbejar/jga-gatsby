@@ -1,5 +1,5 @@
 import React , { Fragment } from "react"
-import Layout from "../components/layout"
+import Layout from "../../components/layout/layout"
 
 import styles from "./page.module.scss"
 

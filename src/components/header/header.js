@@ -1,8 +1,8 @@
 import React from "react"
 
-import SiteTitle from "./site-title"
-import MainNavigation from "./main-navigation"
-import SecondaryNavigation from "./secondary-navigation"
+import SiteTitle from "../site-title/site-title"
+import MainNavigation from "../main-navigation/main-navigation"
+import SecondaryNavigation from "../secondary-navigation/secondary-navigation"
 
 import styles from "./header.module.scss"
 
