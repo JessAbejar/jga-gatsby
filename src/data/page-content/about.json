@@ -1,0 +1,13 @@
+{
+    "main": {
+        "title": "About"
+    },
+    "links": [
+        {
+            "url": "https://www.linkedin.com/in/jessicaabejar/",
+            "label": "LinkedIn",
+            "icon": "<FontAwesomeIcon icon={faLinkedin} />",
+            "text": "Jessica Abejar"
+        }
+    ]
+}

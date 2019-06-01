@@ -1,7 +1,7 @@
 import React from "react"
 
-import Page from "../templates/page"
-import ConnectSection from "../components/connect"
+import Page from "../templates/page/page"
+import ConnectSection from "../components/connect/connect"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLink } from "@fortawesome/free-solid-svg-icons"
@@ -78,6 +78,7 @@ const data = {
         },
     ]
 }
+
 
 const DancePage = () => {
     return (

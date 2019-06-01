@@ -1,6 +1,6 @@
 import React from "react"
 
-import Page from "../templates/page"
+import Page from "../templates/page/page"
 
 const data = {
     main: {

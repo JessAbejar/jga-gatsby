@@ -1,7 +1,7 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import ConnectSection from "../components/connect"
+import Layout from "../components/layout/layout"
+import ConnectSection from "../components/connect/connect"
 
 import styles from "./about.module.scss"
 

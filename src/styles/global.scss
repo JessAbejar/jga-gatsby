@@ -11,10 +11,10 @@
     @media (prefers-color-scheme: dark) {
         --primary: #FFFFFF;
         --secondary: #373737;
-        --aside: #404447;
+        --aside: #525252;
         --dance: hsl(260, 100%, 90%);
         --wellness: hsl(337, 91%, 85%);
-        --events: hsl(228, 70%, 80%);
+        --events: hsl(228, 70%, 85%);
         --writing: hsl(300, 100%, 90%);
         --tech: hsl(204, 64%, 80%);
     }
@@ -30,3 +30,7 @@ $secondary: var(--secondary);
 $aside: var(--aside);
 
 $border: 3px solid;
+
+body {
+    background-color: $secondary;
+}

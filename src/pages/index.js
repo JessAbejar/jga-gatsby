@@ -1,8 +1,8 @@
 import React from "react"
 
-import SiteTitle from "../components/site-title"
-import MainNavigation from "../components/main-navigation"
-import Footer from "../components/footer"
+import SiteTitle from "../components/site-title/site-title"
+import MainNavigation from "../components/main-navigation/main-navigation"
+import Footer from "../components/footer/footer"
 
 import "../styles/index.scss"
 import "../styles/global.scss"
