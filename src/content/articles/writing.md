@@ -1,0 +1,5 @@
+---
+title: Writing
+type: article
+---
+Writing has been one of my earliest passions in life, shaping the artist and storyteller I am today. Through writing, I hope to tell untold stories, illustrate different perspectives, educate anyone about anything, and most importantly, connect with people. Throughout my academic career I had received many writing awards, including the Respect Life Youth Contest in Poetry and in Playwriting, the Respect for Life Speech Contest, and the Sister Francis Dolores Covella Award for Research Writing. During my college career, I worked as a writing tutor and interned as an Editorial Intern for UniPro - Pilipino American Unity for Progress, fact-checking, editing, and co-authoring policy memos across a vast range of topics ahead of the 2010 presidential election. In recent years, I have written dance reviews for shows throughout the New York City area and currently author a youth column for The Filipino Catholic, a monthly newspaper for the Filipino-American Catholic community.

@@ -1,13 +1,13 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
-import Page from "../templates/page/page"
+import Layout from "../components/layout/layout"
+import SEO from "../components/seo/seo"
+import ArticleSection from "../components/article/article"
 import ConnectSection from "../components/connect/connect"
+import { connectIcons } from "../components/connect/connect-icons"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faLink } from "@fortawesome/free-solid-svg-icons"
-import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons"
-
-const data = {
+/*const data = {
     main: {
         title: "Dance",
         content: {
@@ -50,48 +50,34 @@ const data = {
                 description: "Gibney Dance's Institute of Community Action Training, January 2016 Cohort",
             },
         ]
-    },
-    links: [
-        {
-            url: "https://themovingprayer.com",
-            label: "The Moving Prayer Website",
-            icon: <FontAwesomeIcon icon={faLink} />,
-            text: "themovingprayer.com",
-        }, 
-        {
-            url: "https://youtube.com/themovingprayer",
-            label: "The Moving Prayer YouTube Channel",
-            icon: <FontAwesomeIcon icon={faYoutube} />,
-            text: "themovingprayer",
-        },
-        {
-            url: "https://instagram.com/themovingprayer",
-            label: "The Moving Prayer Instagram Page",
-            icon: <FontAwesomeIcon icon={faInstagram} />,
-            text: "themovingprayer",
-        }, 
-        {
-            url: "https://facebook.com/themovingprayer",
-            label: "The Moving Prayer Facebook Page",
-            icon: <FontAwesomeIcon icon={faFacebook} />,
-            text: "themovingprayer",
-        },
-    ]
-}
-
+    }
+}*/
 
 const DancePage = () => {
+    const articleData = (useStaticQuery(graphql`
+        query {
+            markdownRemark ( frontmatter : { title: { eq: "Dance" } }) {
+                frontmatter {
+                    title
+                }
+                html
+            }
+        }
+    `))
+
     return (
-        <Page
-            color="var(--dance)"
-            main={data.main}
-            aside={data.aside}
-        >
+        <Layout>
+            <SEO title="Dance" />
+            <ArticleSection 
+                title={articleData.markdownRemark.frontmatter.title}
+                color="var(--dance)"
+                content={articleData.markdownRemark.html}
+            />
             <ConnectSection
-                links={data.links} 
+                links={connectIcons.dance.links} 
                 color="var(--dance)"
             />
-        </Page>
+        </Layout>
     )
 }
 

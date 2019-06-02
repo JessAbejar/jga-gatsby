@@ -5,7 +5,13 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: `Jessica G. Abejar`,
+    description: `Jessica G. Abejar is a multipotentialite delving into dance, wellness, events, writing, and now integrating tech.`,
+    author: `Jessica G. Abejar`,
+  },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-json`,
     `gatsby-transformer-remark`,
@@ -19,23 +25,29 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name : `data`,
-        path: `${__dirname}/src/data`,
+        name : `content`,
+        path: `${__dirname}/src/content`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `posts`,
-        path: `${__dirname}/src/posts`,
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `projects`,
-        path: `${__dirname}/src/projects`,
+        name: `Jessica G. Abejar`,
+        short_name: `JGA`,
+        start_url: `/`,
+        background_color: `#373737`,
+        theme_color: `#525252`,
+        display: `fullscreen`,
+        icon: `src/images/icon.png`,
       },
     },
+    `gatsby-plugin-offline`,
   ]
 }

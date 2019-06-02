@@ -1,0 +1,40 @@
+{
+    "page": "dance",
+    "aside": {
+        "heading": "Career Highlights",
+        "items": [
+            {
+                "title": "Emerging Leader and Mentee",
+                "description": "Dance/USA's Institute of Leadership Training (DILT), 2016 Cohort"
+            },
+            {
+                "title": "Main Presenter",
+                "description": "Santo Niño Parish Youth Day 2018, Lipa City, Batangas, Philippines"
+            },
+            {
+                "title": "Festival Performer",
+                "description": "World Youth Day 2013, Rio de Janeiro, Brazil"
+            },
+            {
+                "title": "Festival Performer",
+                "description": "World Youth Day 2016, Kraków, Poland"
+            },
+            {
+                "title": "Featured Mainstage Performer",
+                "description": "National Conference on Catholic Youth Ministry 2016, San Jose, California"
+            },
+            {
+                "title": "Archdiocesan Dance Troupe Coordinator (2014-2016), Mainstage Guest Performer (2015), Co-Host (2016), and Assistant Stage Manager (2017)",
+                "description": "New York Catholic Youth Day, Yonkers, NY"
+            },
+            {
+                "title": "Conference Presenter and Lecturer",
+                "description": "Sacred Dance Guild Festival 2015, Erie, Pennsylvania"
+            },
+            {
+                "title": "Trainee",
+                "description": "Gibney Dance's Institute of Community Action Training, January 2016 Cohort"
+            }
+        ]
+    }
+}

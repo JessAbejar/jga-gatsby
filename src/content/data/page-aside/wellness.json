@@ -1,0 +1,24 @@
+{
+    "page":"wellness",
+    "aside": {
+        "heading": "Certifications",
+        "items": [
+            {
+                "title": "Certified Group Fitness Instructor",
+                "description": "American Council on Exercise"
+            },
+            {
+                "title": "Certified Personal Trainer",
+                "description": "American Council on Exercise"
+            },
+            {
+                "title": "Certified POP Pilates Instructor",
+                "description": "POP Pilates"
+            },
+            {
+                "title": "Heartsaver First Aid Infant/Child/Adult CPR/AED",
+                "description": "American Heart Association"
+            }
+        ]
+    }
+}

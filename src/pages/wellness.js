@@ -1,12 +1,14 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
-import Page from "../templates/page/page"
+import Layout from "../components/layout/layout"
+import SEO from "../components/seo/seo"
+import ArticleSection from "../components/article/article"
 import ConnectSection from "../components/connect/connect"
+import { connectIcons } from "../components/connect/connect-icons"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faInstagram } from "@fortawesome/free-brands-svg-icons"
 
-const data = {
+/*const data = {
     main: {
         title: "Wellness",
         content: {
@@ -33,29 +35,34 @@ const data = {
                 description: "American Heart Association",
             },
         ]
-    },
-    links: [
-        {
-            url: "https://instagram.com/jessdoeswellness",
-            label: "Instagram",
-            icon: <FontAwesomeIcon icon={faInstagram} />,
-            text: "jessdoeswellness",
-        }, 
-    ]
-}
+    }
+}*/
 
 const WellnessPage = () => {
+    const articleData = (useStaticQuery(graphql`
+        query {
+            markdownRemark ( frontmatter : { title: { eq: "Wellness" } }) {
+                frontmatter {
+                    title
+                }
+                html
+            }
+        }
+    `))
+
     return (
-        <Page
-            color="var(--wellness)"
-            main={data.main}
-            aside={data.aside}
-        >
+        <Layout>
+            <SEO title="Wellness" />
+            <ArticleSection 
+                title={articleData.markdownRemark.frontmatter.title}
+                color="var(--wellness)"
+                content={articleData.markdownRemark.html}
+            />
             <ConnectSection
-                links={data.links} 
+                links={connectIcons.wellness.links} 
                 color="var(--wellness)"
             />
-        </Page>
+        </Layout>
     )
 }
 

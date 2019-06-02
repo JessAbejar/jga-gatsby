@@ -1,12 +1,13 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
-import Page from "../templates/page/page"
+import Layout from "../components/layout/layout"
+import SEO from "../components/seo/seo"
+import ArticleSection from "../components/article/article"
 import ConnectSection from "../components/connect/connect"
+import { connectIcons } from "../components/connect/connect-icons"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub, faCodepen, faTwitter, faDev } from "@fortawesome/free-brands-svg-icons"
-
-const data = {
+/*const data = {
     main: {
         title: "Tech",
         content: {
@@ -37,47 +38,34 @@ const data = {
                 description: "Adobe Photoshop • Adobe XD",
             },
         ]
-    },
-    links: [
-        {
-            url: "https://github.com/jessabejar",
-            label: "GitHub",
-            icon: <FontAwesomeIcon icon={faGithub} />,
-            text: "jessabejar",
-        }, 
-        {
-            url: "https://codepen.io/jessabejar",
-            label: "CodePen",
-            icon: <FontAwesomeIcon icon={faCodepen} />,
-            text: "jessabejar",
-        },
-        {
-            url: "https://twitter.com/_jessicode",
-            label: "Twitter",
-            icon: <FontAwesomeIcon icon={faTwitter} />,
-            text: "_jessicode",
-        }, 
-        {
-            url: "https://dev.to/jessabejar",
-            label: "The DEV Community",
-            icon: <FontAwesomeIcon icon={faDev} />,
-            text: "jessabejar",
-        },
-    ]
-}
+    }
+}*/
 
 const TechPage = () => {
+    const articleData = (useStaticQuery(graphql`
+        query {
+            markdownRemark ( frontmatter : { title: { eq: "Tech" } }) {
+                frontmatter {
+                    title
+                }
+                html
+            }
+        }
+    `))
+
     return (
-        <Page
-            color="var(--tech)"
-            main={data.main}
-            aside={data.aside}
-        >
+        <Layout>
+            <SEO title="Tech" />
+            <ArticleSection 
+                title={articleData.markdownRemark.frontmatter.title}
+                color="var(--tech)"
+                content={articleData.markdownRemark.html}
+            />
             <ConnectSection
-                links={data.links} 
+                links={connectIcons.tech.links} 
                 color="var(--tech)"
             />
-        </Page>
+        </Layout>
     )
 }
 

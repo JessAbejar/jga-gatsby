@@ -7,6 +7,7 @@
     --events: hsl(228, 70%, 53%);
     --writing: hsl(300, 100%, 35%);
     --tech: hsl(204, 64%, 40%);
+    --shadow: 0px 3px 6px 0px rgba(55,55,55,0.6);
 
     @media (prefers-color-scheme: dark) {
         --primary: #FFFFFF;
@@ -17,6 +18,7 @@
         --events: hsl(228, 70%, 85%);
         --writing: hsl(300, 100%, 90%);
         --tech: hsl(204, 64%, 80%);
+        --shadow: 0px 3px 6px 0px rgba(158,158,158,0.4);
     }
 }
 
@@ -28,6 +30,7 @@ $font: "Helvetica", sans-serif;
 $primary: var(--primary);
 $secondary: var(--secondary);
 $aside: var(--aside);
+$shadow: var(--shadow);
 
 $border: 3px solid;
 

@@ -9,8 +9,8 @@
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; /* 1 */
-  }
+    white-space: nowrap;
+}
 .visuallyHidden.focusable:active,
 .visuallyHidden.focusable:focus {
     clip: auto;

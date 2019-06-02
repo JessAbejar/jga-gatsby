@@ -1,0 +1,20 @@
+{
+    "page":"events",
+    "aside": {
+        "heading": "Education & Awards",
+        "items": [
+            {
+                "title": "Professional Diploma in Meeting and Convention Management",
+                "description": "New York University's School of Professional Studies"
+            },
+            {
+                "title": "Organization of the Year",
+                "description": "FLOW, Poetry and Spoken Word Club, at the College of Mount Saint Vincent"
+            },
+            {
+                "title": "Student Organization Community Service Award",
+                "description": "FLOW's Flashlight Vigil, event raising awareness and funds for suicide prevention"
+            }
+        ]
+    }
+}

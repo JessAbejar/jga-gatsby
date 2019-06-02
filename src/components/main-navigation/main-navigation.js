@@ -16,7 +16,7 @@ const PageTag = (props) => {
 const MainNavigation = (props) => {
     return (
         <nav>
-            <div className={styles.navMenu}>
+            <div id="mainNavigation" className={styles.navMenu}>
                 <PageTag 
                 color="var(--dance)"
                 pageName="dance"

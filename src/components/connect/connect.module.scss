@@ -11,10 +11,10 @@
     font-weight: bold;
     
     @media #{$break-small} {
-      font-size: 2rem;  
+        font-size: 2rem;  
     }
     @media #{$break-large} {
-      font-size: 2.25rem;  
+        font-size: 2.25rem;  
     }
 }
 .connectLinks {
@@ -35,6 +35,6 @@
     }
     &:hover {
         transform: translate(10px);
-        transition: all .5s linear;
+        transition: all .5s ease-in-out;
     }
 }

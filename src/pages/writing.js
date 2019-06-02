@@ -1,8 +1,11 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
-import Page from "../templates/page/page"
+import Layout from "../components/layout/layout"
+import SEO from "../components/seo/seo"
+import ArticleSection from "../components/article/article"
 
-const data = {
+/*const data = {
     main: {
         title: "Writing",
         content: {
@@ -30,15 +33,29 @@ const data = {
             },
         ]
     },
-}
+}*/
 
 const WritingPage = () => {
+    const articleData = (useStaticQuery(graphql`
+        query {
+            markdownRemark ( frontmatter : { title: { eq: "Writing" } }) {
+                frontmatter {
+                    title
+                }
+                html
+            }
+        }
+    `))
+
     return (
-        <Page
-            color="var(--writing)"
-            main={data.main}
-            aside={data.aside}
-        />
+        <Layout>
+            <SEO title="Writing" />
+            <ArticleSection 
+                title={articleData.markdownRemark.frontmatter.title}
+                color="var(--writing)"
+                content={articleData.markdownRemark.html}
+            />
+        </Layout>
     )
 }
 
