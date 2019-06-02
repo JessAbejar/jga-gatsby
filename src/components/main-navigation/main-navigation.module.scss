@@ -2,12 +2,8 @@
 
 .navMenu {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
     margin: 1.5rem 0rem;
-
-    @media #{$break-small} {
-        flex-flow: row wrap; 
-    }
 }
 a {
     text-decoration: none;

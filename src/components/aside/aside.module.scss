@@ -1,27 +1,26 @@
 @import "../../styles/global.scss";
 
-
-.workHeading {
+aside {
+    background-color: $aside;
+    padding: 1rem;
+    padding-top: 2rem;
+    margin: 2rem 0;
+}
+.asideHeading {
     font-family: $font;
     font-size: 1.375rem;
+    line-height: 1.154rem;
     color: $primary;
     font-weight: bold;
     
     @media #{$break-small} {
-      font-size: 2rem;  
+      font-size: 1.5rem;  
+      line-height: 1.25rem;
     }
     @media #{$break-large} {
-      font-size: 2.25rem;  
+      font-size: 1.75rem; 
     }
 }
-.workGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-}
-.workItem {
-    padding: 1rem;
-    max-width: 350px;
-  }
 .itemTitle {
     font-family: $font;
     font-size: 1rem;
@@ -37,15 +36,6 @@
       line-height: 1.375rem;  
     }
 }
-.workImg {
-    max-width: 320px;
-    margin: 0 auto;
-    
-    img {
-        width: 100%;
-    }
-}
-
 p {
     font-family: $font;
     font-size: 1rem;

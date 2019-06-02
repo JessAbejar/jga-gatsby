@@ -1,6 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout/layout"
+import SEO from "../components/seo/seo"
 import ConnectSection from "../components/connect/connect"
 import { connectIcons } from "../components/connect/connect-icons"
 
@@ -9,6 +10,7 @@ import styles from "./about.module.scss"
 const AboutPage = () => {
     return (
         <Layout>
+            <SEO title="About" />
             <main id="main">
                 <article id="mainArticle">
                     <h1 className={styles.pageTitle}>About Me</h1>
