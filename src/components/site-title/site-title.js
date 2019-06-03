@@ -1,6 +1,8 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 
+import logo from "../../images/icon.png"
+
 import styles from "./site-title.module.scss"
 
 const SiteTitle = () => {
@@ -16,7 +18,10 @@ const SiteTitle = () => {
 
     return (
         <Link to="/" className={styles.siteTitle}>
-            <span>{data.site.siteMetadata.title}</span>
+            {data.site.siteMetadata.title}
+            <figure>
+                <img src={logo} alt="" className={styles.logo}/>
+            </figure>
         </Link>
     )
 }

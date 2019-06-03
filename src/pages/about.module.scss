@@ -20,8 +20,8 @@ article {
 } 
 .headingLarge {
     font-family: $font;
-    font-size: 1.375rem;
-    line-height: 1.154rem;
+    font-size: 1.625rem;
+    line-height: 1.54rem;
     color: $primary;
     font-weight: bold;
     
@@ -50,6 +50,18 @@ article {
     @media #{$break-large} {
       font-size: 1.75rem;  
       line-height: 1.75rem;
+    }
+}
+.illustration {
+    width: 100%;
+    margin: 2rem auto;
+
+    @media #{$break-small} {
+        width: 75%
+    }
+    
+    @media #{$break-large} {
+
     }
 }
 p {

@@ -1,5 +1,6 @@
 import React from "react"
 
+import SEO from "../components/seo/seo"
 import SiteTitle from "../components/site-title/site-title"
 import MainNavigation from "../components/main-navigation/main-navigation"
 import Footer from "../components/footer/footer"
@@ -11,6 +12,7 @@ import styles from "./index.module.scss"
 const FrontPage = () => {
     return (
         <main className={styles.mainContainer}>
+            <SEO title="Home" />
             <h1 className={styles.headingLarge}>Hello, my name is <br />
             <SiteTitle />
             </h1>

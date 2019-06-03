@@ -5,6 +5,7 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
 import ArticleSection from "../components/article/article"
 import AsideSection from "../components/aside/aside"
+import WorkCards from "../components/work/work-cards"
 
 const WritingPage = () => {
     const data = (useStaticQuery(graphql`
@@ -24,6 +25,21 @@ const WritingPage = () => {
                     }
                 }
             }
+            allMarkdownRemark ( filter: { frontmatter: { type: { eq: "writing-card"} } }) {
+                edges {
+                  node {
+                    frontmatter {
+                      title
+                      image {
+                        publicURL
+                      }
+                      image_description
+                      description
+                    }
+                    html
+                  }
+                }
+            }
         }
     `))
 
@@ -39,6 +55,11 @@ const WritingPage = () => {
                 <AsideSection 
                     aside={data.pageAsideJson.aside}
                     color="var(--writing)"
+                />
+                <WorkCards 
+                    title="Writing Samples"
+                    color="var(--writing)"
+                    items={data.allMarkdownRemark.edges}
                 />
             </main>
         </Layout>

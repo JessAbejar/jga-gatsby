@@ -1,0 +1,40 @@
+@import "../styles/global.scss";
+
+.pageTitle {
+    margin-top: 3rem;
+    font-family: "Cookie", cursive;
+    font-size: 3rem;
+    color: $primary;
+    font-weight: bold;
+    
+    @media #{$break-small} {
+        font-size: 4rem;  
+    }
+    @media #{$break-large} {
+        font-size: 5rem;  
+    }
+}
+p {
+    font-family: $font;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: $primary;
+        
+    @media #{$break-small} {
+        line-height: 1.3rem;  
+    }
+    
+    @media #{$break-large} {
+        font-size: 1.1rem;
+        line-height: 1.375rem;  
+    }
+}
+.return {
+    width: fit-content;
+    padding-bottom: .5rem;
+    color: $primary;
+    
+    &:hover {
+        border-bottom: $border $primary;
+    }
+}

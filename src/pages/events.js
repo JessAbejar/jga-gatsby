@@ -5,6 +5,7 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
 import ArticleSection from "../components/article/article"
 import AsideSection from "../components/aside/aside"
+import WorkCards from "../components/work/work-cards"
 
 const EventsPage = () => {
     const data = (useStaticQuery(graphql`
@@ -24,6 +25,21 @@ const EventsPage = () => {
                     }
                 }
             }
+            allMarkdownRemark ( filter: { frontmatter: { type: { eq: "events-card"} } }) {
+                edges {
+                  node {
+                    frontmatter {
+                      title
+                      image {
+                        publicURL
+                      }
+                      image_description
+                      description
+                    }
+                    html
+                  }
+                }
+            }
         }
     `))
 
@@ -39,6 +55,11 @@ const EventsPage = () => {
                 <AsideSection 
                     aside={data.pageAsideJson.aside}
                     color="var(--events)"
+                />
+                <WorkCards 
+                    title="Portfolio"
+                    color="var(--events)"
+                    items={data.allMarkdownRemark.edges}
                 />
             </main>
         </Layout>

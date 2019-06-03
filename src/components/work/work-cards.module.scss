@@ -1,0 +1,84 @@
+@import "../../styles/global.scss";
+
+section {
+    margin: 6rem 0 2rem 0;
+}
+.workHeading {
+    font-family: $font;
+    font-size: 1.375rem;
+    color: $primary;
+    font-weight: bold;
+    
+    @media #{$break-small} {
+      font-size: 2rem;  
+    }
+    @media #{$break-large} {
+      font-size: 2.25rem;  
+    }
+}
+.workGrid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center;
+    grid-gap: .5rem;
+}
+.workItem {
+    max-width: 350px;
+    padding: .5rem;
+}
+.workImg {
+    max-width: 320px;
+    margin: 0 auto;
+    
+    img {
+        width: 100%;
+    }
+}
+.itemTitle {
+    font-family: $font;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    color: $primary;
+    margin-bottom: .5rem;
+      
+    @media #{$break-small} {
+      line-height: 1.3rem;  
+    }
+    @media #{$break-large} {
+      line-height: 1.375rem;  
+    }
+}
+.workDescription {
+    font-family: $font;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: $primary;
+    font-style: italic;
+    margin-bottom: 1rem;
+        
+    @media #{$break-small} {
+        line-height: 1.3rem;  
+    }
+    @media #{$break-large} {
+        font-size: 1.1rem;
+        line-height: 1.375rem;  
+    }
+}
+.samples {
+    background-color: $aside;
+    padding: 1rem;
+    padding-top: 2rem;
+    margin: 2rem 0;
+}
+
+.samples a {
+    margin-left: 2rem;
+    padding-bottom: .5rem;
+    color: $primary;
+    
+    &:hover {
+        border-bottom: $border $primary;
+    }
+}
