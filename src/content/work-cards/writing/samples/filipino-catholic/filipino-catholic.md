@@ -1,6 +1,7 @@
 ---
 title: "#FollowersOfChrist, The Filipino Catholic (2013 - present)"
 type: writing-card
+content_order: 1
 image: "./image.png" 
 image_description: "The Filipino Catholic logo."
 description: |

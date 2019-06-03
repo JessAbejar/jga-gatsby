@@ -9,8 +9,10 @@ const BlogPage = () => {
     return(
         <Layout>
             <SEO title="Blog" />
-            <h1 className={styles.pageTitle}>Blog</h1>
-            <p>Please come back another time to read some blog posts!</p>
+            <article>
+                <h1 className={styles.pageTitle}>Blog</h1>
+                <p>Please come back another time to read some blog posts!</p>
+            </article>
         </Layout>
     )
 }

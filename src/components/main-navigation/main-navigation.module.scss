@@ -1,12 +1,9 @@
-@import "../../styles/global.scss";
+@import "../../styles/variables";
 
 .navMenu {
     display: flex;
     flex-flow: row wrap;
     margin: 1.5rem 0rem;
-}
-nav a {
-    text-decoration: none;
 }
 .pageTag {
     font-family: $font;
@@ -27,4 +24,8 @@ nav a {
         transform: translate(-2px, -2px);
         transition: all .2s linear;
     }
+}
+.activePageTag{
+    box-shadow: $shadow;
+    transform: translate(-2px, -2px);
 }

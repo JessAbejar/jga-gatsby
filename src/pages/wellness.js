@@ -27,7 +27,10 @@ const WellnessPage = () => {
                     }
                 }
             }
-            allMarkdownRemark ( filter: { frontmatter: { type: { eq: "wellness-card"} } }) {
+            allMarkdownRemark ( 
+                filter: { frontmatter: { type: { eq: "wellness-card"} } }
+                sort: { fields : [frontmatter___content_order], order: ASC}
+            ) {
                 edges {
                   node {
                     frontmatter {

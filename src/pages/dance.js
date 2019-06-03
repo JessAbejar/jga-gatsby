@@ -5,25 +5,57 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
 import ArticleSection from "../components/article/article"
 import AsideSection from "../components/aside/aside"
+import WorkSpotlight from "../components/work/work-spotlight"
+import WorkVideos from "../components/work/work-videos"
 import ConnectSection from "../components/connect/connect"
 import { connectIcons } from "../components/connect/connect-icons"
 
 const DancePage = () => {
     const data = (useStaticQuery(graphql`
         query {
-            markdownRemark ( frontmatter : { title: { eq: "Dance" } }) {
+            article: markdownRemark ( frontmatter : { title: { eq: "Dance" } }) {
                 frontmatter {
                     title
                 }
                 html
             }
-            pageAsideJson ( page : { eq: "dance"} ) {
+            aside: pageAsideJson ( page : { eq: "dance"} ) {
                 aside {
                     heading
                     items {
                         title
                         description
                     }
+                }
+            }
+            spotlight: markdownRemark (frontmatter : { type : {eq: "dance-spotlight"}}) {
+                frontmatter {
+                  title
+                  image {
+                    publicURL
+                  }
+                  logo {
+                      publicURL
+                  }
+                  image_description
+                  role 
+                  description
+                }
+            }
+            videos: allMarkdownRemark ( 
+                filter: { frontmatter: { type: { eq: "dance-video-card"} } }
+                sort: { fields : [frontmatter___content_order], order: ASC}
+            ) {
+                edges {
+                  node {
+                    frontmatter {
+                      title
+                      year_created
+                      by
+                      description
+                    }
+                    html
+                  }
                 }
             }
         }
@@ -34,13 +66,26 @@ const DancePage = () => {
             <SEO title="Dance" />
             <main id="main">
                 <ArticleSection 
-                    title={data.markdownRemark.frontmatter.title}
+                    title={data.article.frontmatter.title}
                     color="var(--dance)"
-                    content={data.markdownRemark.html}
+                    content={data.article.html}
                 />
                 <AsideSection 
-                    aside={data.pageAsideJson.aside}
+                    aside={data.aside.aside}
                     color="var(--dance)"
+                />
+                <WorkSpotlight
+                    color="var(--dance)"
+                    spotlight={data.spotlight}
+                >
+                    <a href="https://themovingprayer.com" target="_blank" rel="noopener noreferrer">
+                        Learn more on The Moving Prayer website
+                    </a> 
+                </WorkSpotlight>
+                <WorkVideos
+                    title="Performance Samples"
+                    color="var(--dance)"
+                    items={data.videos.edges}
                 />
                 <ConnectSection
                     links={connectIcons.dance.links} 

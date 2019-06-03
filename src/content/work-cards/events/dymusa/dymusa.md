@@ -1,6 +1,7 @@
 ---
 title: Dominican Youth Movement USA - Events Consultant (2017-2018)
 type: events-card
+content_order: 2
 image: "./image.png"
 image_description: "Dominican Youth Movement USA logo."
 description: |

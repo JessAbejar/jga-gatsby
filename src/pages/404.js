@@ -10,9 +10,11 @@ const NotFoundPage = () => {
     return (
         <Layout>
             <SEO title="404 Page Not Found" />
-            <h1 className={styles.pageTitle}>Whoops!</h1>
-            <p>It looks like the page you are looking for does not exist!</p>
-            <Link to="/" className={styles.return}>Return to the Homepage</Link>
+            <article>
+                <h1 className={styles.pageTitle}>Whoops!</h1>
+                <p>It looks like the page you are looking for does not exist!</p>
+                <Link to="/" className={styles.return}>Return to the Homepage</Link>
+            </article>
         </Layout>
     )
 }

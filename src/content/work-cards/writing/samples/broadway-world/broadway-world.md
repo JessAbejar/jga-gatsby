@@ -1,6 +1,7 @@
 ---
 title: NYC Dance, BroadwayWorld (2014-2015)
 type: writing-card
+content_order: 2
 image: "./image.png"
 image_description: "Broadway World logo."
 description: |

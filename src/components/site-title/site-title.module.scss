@@ -1,4 +1,4 @@
-@import "../../styles/global.scss";
+@import "../../styles/variables";
 
 .siteTitle {
     font-size: 3.25rem;
@@ -6,6 +6,8 @@
     color: $primary;
     font-weight: normal;
     font-family: 'Cookie', cursive;
+    border: none;
+    padding: 0;
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -22,6 +24,7 @@
 
     &:hover {
         text-decoration: none;
+        padding-bottom: 0;
     }
 }
 figure {

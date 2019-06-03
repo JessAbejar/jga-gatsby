@@ -1,6 +1,7 @@
 ---
 title: Dance Cardio
 type: wellness-card
+content_order: 2
 image: "./image.png"
 description: A high-intensity dance-based workout
 ---

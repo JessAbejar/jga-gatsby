@@ -1,7 +1,9 @@
-@import "../styles/global.scss";
+@import "../styles/variables";
 
+article {
+    margin: 2rem 0;
+}
 .pageTitle {
-    margin-top: 3rem;
     font-family: $font;
     font-size: 2rem;
     color: $primary;

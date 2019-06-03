@@ -1,6 +1,7 @@
 ---
 title: I Can Hear Them Dancing
 type: writing-video-card
+content_order: 2
 year created: 2007
 by: Written and Performed by Jessica Abejar
 description: |

@@ -25,7 +25,10 @@ const EventsPage = () => {
                     }
                 }
             }
-            allMarkdownRemark ( filter: { frontmatter: { type: { eq: "events-card"} } }) {
+            allMarkdownRemark ( 
+                filter: { frontmatter: { type: { eq: "events-card"} } }
+                sort: { fields : [frontmatter___content_order], order: ASC}
+            ) {
                 edges {
                   node {
                     frontmatter {

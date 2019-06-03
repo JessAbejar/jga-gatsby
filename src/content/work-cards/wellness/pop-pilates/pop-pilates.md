@@ -1,6 +1,7 @@
 ---
 title: POP Pilates
 type: wellness-card
+content_order: 1
 image: "./image.png"
 image_description: ""
 description: A pilates-inspired group fitness format

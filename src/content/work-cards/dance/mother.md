@@ -1,6 +1,7 @@
 ---
 title: Mother
 type: dance-video-card
+content_order: 1
 year created: 2004
 by: Choreographed by Jessica Abejar
 description: |

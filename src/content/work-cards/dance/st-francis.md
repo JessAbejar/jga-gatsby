@@ -1,6 +1,7 @@
 ---
 title: Prayer of St. Francis of Assisi – Dance for Global Peace
 type: dance-video-card
+content_order: 2
 year created: 2013
 by: Choreographed by Jessica Abejar
 description: |

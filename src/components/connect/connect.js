@@ -16,7 +16,7 @@ const ConnectLinks = ({ links, color}) => {
 
 const ConnectSection = (props) => {
     return(
-        <section id="connect" className={styles.connect}>
+        <section id="connect">
             <h2 className={styles.connectHeading}>Connect With Me</h2>
             <ConnectLinks links={props.links} color={props.color}/>
         </section>

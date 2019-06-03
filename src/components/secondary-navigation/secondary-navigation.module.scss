@@ -1,4 +1,4 @@
-@import "../../styles/global.scss";
+@import "../../styles/variables";
 
 .secondaryNav {
     padding: 1rem 2rem;
@@ -22,7 +22,7 @@
             border-bottom: $border $primary;
         }
     }
-}
-a.active {
-    border-bottom: $border $primary;
+    a.active {
+        border-bottom: $border $primary;
+    }
 }

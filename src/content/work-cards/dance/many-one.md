@@ -1,6 +1,7 @@
 ---
 title: Many and One - National College "Preaching in Action" Conference 2014
 type: dance-video-card
+content_order: 5
 year created: 2014
 by: Workshop and Choreographed by Jessica Abejar
 description: |

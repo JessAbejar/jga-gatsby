@@ -1,11 +1,5 @@
-@import "../../styles/global.scss";
+@import "../../styles/variables";
 
-aside {
-    background-color: $aside;
-    padding: 1rem;
-    padding-top: 2rem;
-    margin: 2rem 0;
-}
 .asideHeading {
     font-family: $font;
     font-size: 1.375rem;
@@ -33,20 +27,6 @@ aside {
         line-height: 1.3rem;  
     }
     @media #{$break-large} {
-        line-height: 1.375rem;  
-    }
-}
-p {
-    font-family: $font;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    color: $primary;
-        
-    @media #{$break-small} {
-        line-height: 1.3rem;  
-    }
-    @media #{$break-large} {
-        font-size: 1.1rem;
         line-height: 1.375rem;  
     }
 }

@@ -1,6 +1,7 @@
 ---
 title: The Archdiocesan Dance Troupe
 type: dance-video-card
+content_order: 3
 year created: 2014
 by: Coordinated by Jessica Abejar
 description: |

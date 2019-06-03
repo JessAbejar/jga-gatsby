@@ -1,5 +1,39 @@
-@import "../styles/global.scss";
+@import "../styles/variables";
 
+.headingLarge {
+    font-family: $font;
+    font-size: 1.625rem;
+    line-height: 1.54rem;
+    color: $primary;
+    font-weight: bold;
+    
+    @media #{$break-small} {
+        font-size: 2rem;  
+        line-height: 2rem;
+    }
+    
+    @media #{$break-large} {
+        font-size: 2.25rem;  
+        line-height: 2.25rem;
+    }   
+}
+.headingMedium {
+    font-family: $font;
+    font-size: 1.375rem;
+    line-height: 1.363rem;
+    color: $primary;
+    font-weight: bold;
+    
+    @media #{$break-small} {
+      font-size: 1.5rem;  
+      line-height: 1.25rem;
+    }
+    
+    @media #{$break-large} {
+      font-size: 1.75rem;  
+      line-height: 1.75rem;
+    }
+}
 .mainContainer {
     margin: 0 auto;
     max-width: 750px;

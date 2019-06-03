@@ -6,6 +6,7 @@ import SEO from "../components/seo/seo"
 import ArticleSection from "../components/article/article"
 import AsideSection from "../components/aside/aside"
 import WorkCards from "../components/work/work-cards"
+import WorkVideos from "../components/work/work-videos"
 
 const WritingPage = () => {
     const data = (useStaticQuery(graphql`
@@ -25,7 +26,10 @@ const WritingPage = () => {
                     }
                 }
             }
-            allMarkdownRemark ( filter: { frontmatter: { type: { eq: "writing-card"} } }) {
+            card: allMarkdownRemark ( 
+                filter: { frontmatter: { type: { eq: "writing-card"} } }
+                sort: { fields : [frontmatter___content_order], order: ASC}
+            ) {
                 edges {
                   node {
                     frontmatter {
@@ -34,6 +38,22 @@ const WritingPage = () => {
                         publicURL
                       }
                       image_description
+                      description
+                    }
+                    html
+                  }
+                }
+            }
+            video: allMarkdownRemark ( 
+                filter: { frontmatter: { type: { eq: "writing-video-card"} } }
+                sort: { fields : [frontmatter___content_order], order: ASC}
+            ) {
+                edges {
+                  node {
+                    frontmatter {
+                      title
+                      year_created
+                      by
                       description
                     }
                     html
@@ -59,7 +79,12 @@ const WritingPage = () => {
                 <WorkCards 
                     title="Writing Samples"
                     color="var(--writing)"
-                    items={data.allMarkdownRemark.edges}
+                    items={data.card.edges}
+                />
+                <WorkVideos
+                    title="Performance Samples"
+                    color="var(--writing)"
+                    items={data.video.edges}
                 />
             </main>
         </Layout>
