@@ -8,11 +8,14 @@ description: |
 ---
 This monthly column was intended for younger readers to connect with their Filipino and Catholic heritage but has been enjoyed by readers of all ages. In simple, easy-to-understand articles, I include topics such as themed prayer ideas; saint profiles; Filipino Catholic customs, traditions, and values; and feast days, holidays and holy days. Occasionally, I also cover local events in the Filipino-American Catholic community.
 
-<aside class="samples">
+<aside>
 <h4 class="headingSmall">Samples</h4>
 
-- **[#MessengersOfChrist ⧉](https://jessicagabejar.com/img/foc-oct-2018.pdf)**
-- **[The Lovely #OurLadies of the Philippines ⧉](https://jessicagabejar.com/img/foc-apr-2017.pdf)**
-- **[Celebrating #FAHM with #FilipinoCatholicTraditions ⧉](https://jessicagabejar.com/img/foc-oct-2016.pdf)**
-- **[How to Give Up #SocialMedia for Lent and Still Be #ConnectedToChrist ⧉](https://jessicagabejar.com/img/foc-feb-2016.pdf)**
+[#MessengersOfChrist](https://jessicagabejar.com/img/foc-oct-2018.pdf)
+
+[The Lovely #OurLadies of the Philippines](https://jessicagabejar.com/img/foc-apr-2017.pdf)
+
+[Celebrating #FAHM with #FilipinoCatholicTraditions](https://jessicagabejar.com/img/foc-oct-2016.pdf)
+
+[How to Give Up #SocialMedia for Lent and Still Be #ConnectedToChrist](https://jessicagabejar.com/img/foc-feb-2016.pdf)
 </aside>

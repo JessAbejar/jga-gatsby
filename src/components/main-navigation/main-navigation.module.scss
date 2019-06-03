@@ -5,7 +5,7 @@
     flex-flow: row wrap;
     margin: 1.5rem 0rem;
 }
-a {
+nav a {
     text-decoration: none;
 }
 .pageTag {
@@ -26,24 +26,5 @@ a {
         box-shadow: $shadow;
         transform: translate(-2px, -2px);
         transition: all .2s linear;
-    }
-}
-.secondaryNav {
-    padding: 1rem 2rem;
-    margin: 1rem;
-    text-transform: lowercase;
-    background-color: $aside;
-
-    span {
-        font-style: italic;
-    }
-    a {
-        margin-left: 2rem;
-        padding-bottom: .5rem;
-        color: $primary;
-        
-        &:hover {
-            border-bottom: $border $primary;
-        }
     }
 }

@@ -4,54 +4,6 @@ article {
     margin-top: 1rem;
     padding: 2rem 0;
 }
-.pageTitle {
-    font-family: $font;
-    font-size: 2rem;
-    color: $primary;
-    font-weight: bold;
-    
-    @media #{$break-small} {
-        font-size: 2.5rem;  
-    }
-    
-    @media #{$break-large} {
-        font-size: 3rem;  
-    }
-} 
-.headingLarge {
-    font-family: $font;
-    font-size: 1.625rem;
-    line-height: 1.54rem;
-    color: $primary;
-    font-weight: bold;
-    
-    @media #{$break-small} {
-      font-size: 2rem;  
-      line-height: 2rem;
-    }
-    
-    @media #{$break-large} {
-      font-size: 2.25rem;  
-      line-height: 2.25rem;
-    }
-}
-.headingMedium {
-    font-family: $font;
-    font-size: 1.375rem;
-    line-height: 1.363rem;
-    color: $primary;
-    font-weight: bold;
-    
-    @media #{$break-small} {
-      font-size: 1.5rem;  
-      line-height: 1.25rem;
-    }
-    
-    @media #{$break-large} {
-      font-size: 1.75rem;  
-      line-height: 1.75rem;
-    }
-}
 .illustration {
     width: 100%;
     margin: 2rem auto;
@@ -62,20 +14,5 @@ article {
     
     @media #{$break-large} {
 
-    }
-}
-p {
-    font-family: $font;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    color: $primary;
-        
-    @media #{$break-small} {
-        line-height: 1.3rem;  
-    }
-    
-    @media #{$break-large} {
-        font-size: 1.1rem;
-        line-height: 1.375rem;  
     }
 }

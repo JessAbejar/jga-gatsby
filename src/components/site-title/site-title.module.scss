@@ -19,12 +19,14 @@
     @media #{$break-large} {
         font-size: 5.5rem; 
     }
-}
 
+    &:hover {
+        text-decoration: none;
+    }
+}
 figure {
     margin: 0;
 }
-
 .logo {
     margin: 1rem;
     width: 200px;

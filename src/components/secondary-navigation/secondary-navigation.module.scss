@@ -10,16 +10,19 @@
         font-style: italic;
         color: $primary;
     }
+
     a {
+        color: $primary;
         margin-left: 2rem;
         padding-bottom: .5rem;
-        color: $primary;
-        
+        text-decoration: none;
+        border-bottom: $border transparent;
+    
         &:hover {
             border-bottom: $border $primary;
         }
     }
 }
-.active {
+a.active {
     border-bottom: $border $primary;
 }

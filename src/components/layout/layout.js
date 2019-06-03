@@ -1,6 +1,5 @@
 import React from "react"
 
-import "../../styles/index.scss"
 import "../../styles/global.scss"
 import styles from "./layout.module.scss"
 

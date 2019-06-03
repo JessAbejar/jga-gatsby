@@ -22,19 +22,15 @@
     margin-left: 1rem;   
 
     a,
-    a:hover,
-    a:visited {
+    a:hover {
         font-family: $font;
         color: $primary;
         text-decoration: none;
         font-weight: bold;
     }
-    a:hover {
-        font-family: $font;
-        font-weight: bold;
-    }
+    
     &:hover {
-        transform: translate(10px);
-        transition: all .5s ease-in-out;
+        transform: translate(1.5rem);
+        transition: all 1s ease-in-out;
     }
 }

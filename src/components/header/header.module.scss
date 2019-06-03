@@ -1,9 +1,10 @@
 @import "../../styles/global.scss";
 
 .skip {
-    font: $font;
-    color: $primary;
     font-weight: bold;
+    font-family: $font;
+    color: $primary;
+    text-decoration: none;
 }
 
 .visuallyHidden {

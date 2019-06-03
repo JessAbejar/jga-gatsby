@@ -5,6 +5,7 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
 import ArticleSection from "../components/article/article"
 import AsideSection from "../components/aside/aside"
+import WorkCards from "../components/work/work-cards"
 import ConnectSection from "../components/connect/connect"
 import { connectIcons } from "../components/connect/connect-icons"
 
@@ -26,6 +27,21 @@ const WellnessPage = () => {
                     }
                 }
             }
+            allMarkdownRemark ( filter: { frontmatter: { type: { eq: "wellness-card"} } }) {
+                edges {
+                  node {
+                    frontmatter {
+                      title
+                      image {
+                        publicURL
+                      }
+                      image_description
+                      description
+                    }
+                    html
+                  }
+                }
+            }
         }
     `))
 
@@ -41,6 +57,11 @@ const WellnessPage = () => {
                 <AsideSection 
                     aside={data.pageAsideJson.aside}
                     color="var(--wellness)"
+                />
+                <WorkCards 
+                    title="Formats"
+                    color="var(--wellness)"
+                    items={data.allMarkdownRemark.edges}
                 />
                 <ConnectSection
                     links={connectIcons.wellness.links} 

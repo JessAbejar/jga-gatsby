@@ -14,11 +14,11 @@ aside {
     font-weight: bold;
     
     @media #{$break-small} {
-      font-size: 1.5rem;  
-      line-height: 1.25rem;
+        font-size: 1.5rem;  
+        line-height: 1.25rem;
     }
     @media #{$break-large} {
-      font-size: 1.75rem; 
+        font-size: 1.75rem; 
     }
 }
 .itemTitle {
@@ -30,10 +30,10 @@ aside {
     margin: 0;
       
     @media #{$break-small} {
-      line-height: 1.3rem;  
+        line-height: 1.3rem;  
     }
     @media #{$break-large} {
-      line-height: 1.375rem;  
+        line-height: 1.375rem;  
     }
 }
 p {
