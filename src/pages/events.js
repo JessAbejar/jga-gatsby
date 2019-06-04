@@ -49,22 +49,20 @@ const EventsPage = () => {
     return (
         <Layout>
             <SEO title="Events" />
-            <main id="main">
-                <ArticleSection 
-                    title={data.markdownRemark.frontmatter.title}
-                    color="var(--events)"
-                    content={data.markdownRemark.html}
-                />
-                <AsideSection 
-                    aside={data.pageAsideJson.aside}
-                    color="var(--events)"
-                />
-                <WorkCards 
-                    title="Portfolio"
-                    color="var(--events)"
-                    items={data.allMarkdownRemark.edges}
-                />
-            </main>
+            <ArticleSection 
+                title={data.markdownRemark.frontmatter.title}
+                color="var(--events)"
+                content={data.markdownRemark.html}
+            />
+            <AsideSection 
+                aside={data.pageAsideJson.aside}
+                color="var(--events)"
+            />
+            <WorkCards 
+                title="Portfolio"
+                color="var(--events)"
+                items={data.allMarkdownRemark.edges}
+            />
         </Layout>
     )
 }

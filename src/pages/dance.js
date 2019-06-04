@@ -64,34 +64,32 @@ const DancePage = () => {
     return (
         <Layout>
             <SEO title="Dance" />
-            <main id="main">
-                <ArticleSection 
-                    title={data.article.frontmatter.title}
-                    color="var(--dance)"
-                    content={data.article.html}
-                />
-                <AsideSection 
-                    aside={data.aside.aside}
-                    color="var(--dance)"
-                />
-                <WorkSpotlight
-                    color="var(--dance)"
-                    spotlight={data.spotlight}
-                >
-                    <a href="https://themovingprayer.com" target="_blank" rel="noopener noreferrer">
-                        Learn more on The Moving Prayer website
-                    </a> 
-                </WorkSpotlight>
-                <WorkVideos
-                    title="Performance Samples"
-                    color="var(--dance)"
-                    items={data.videos.edges}
-                />
-                <ConnectSection
-                    links={connectIcons.dance.links} 
-                    color="var(--dance)"
-                />
-            </main>
+            <ArticleSection 
+                title={data.article.frontmatter.title}
+                color="var(--dance)"
+                content={data.article.html}
+            />
+            <AsideSection 
+                aside={data.aside.aside}
+                color="var(--dance)"
+            />
+            <WorkSpotlight
+                color="var(--dance)"
+                spotlight={data.spotlight}
+            >
+                <a href="https://themovingprayer.com" target="_blank" rel="noopener noreferrer">
+                    Learn more on The Moving Prayer website
+                </a> 
+            </WorkSpotlight>
+            <WorkVideos
+                title="Performance Samples"
+                color="var(--dance)"
+                items={data.videos.edges}
+            />
+            <ConnectSection
+                links={connectIcons.dance.links} 
+                color="var(--dance)"
+            />
         </Layout>
     )
 }

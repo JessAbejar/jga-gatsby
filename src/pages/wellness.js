@@ -51,26 +51,24 @@ const WellnessPage = () => {
     return (
         <Layout>
             <SEO title="Wellness" />
-            <main id="main">
-                <ArticleSection 
-                    title={data.markdownRemark.frontmatter.title}
-                    color="var(--wellness)"
-                    content={data.markdownRemark.html}
-                />
-                <AsideSection 
-                    aside={data.pageAsideJson.aside}
-                    color="var(--wellness)"
-                />
-                <WorkCards 
-                    title="Formats"
-                    color="var(--wellness)"
-                    items={data.allMarkdownRemark.edges}
-                />
-                <ConnectSection
-                    links={connectIcons.wellness.links} 
-                    color="var(--wellness)"
-                />
-            </main>
+            <ArticleSection 
+                title={data.markdownRemark.frontmatter.title}
+                color="var(--wellness)"
+                content={data.markdownRemark.html}
+            />
+            <AsideSection 
+                aside={data.pageAsideJson.aside}
+                color="var(--wellness)"
+            />
+            <WorkCards 
+                title="Formats"
+                color="var(--wellness)"
+                items={data.allMarkdownRemark.edges}
+            />
+            <ConnectSection
+                links={connectIcons.wellness.links} 
+                color="var(--wellness)"
+            />
         </Layout>
     )
 }

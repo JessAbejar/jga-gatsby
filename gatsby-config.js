@@ -33,6 +33,7 @@ module.exports = {
               maxWidth: 720,
             },
           },
+          `gatsby-remark-copy-linked-files`,
         ],
       },
     },

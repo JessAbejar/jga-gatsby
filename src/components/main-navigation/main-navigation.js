@@ -5,7 +5,7 @@ import styles from "./main-navigation.module.scss"
 
 const PageTag = (props) => {
     return (
-        <Link to={`/${props.pageName}`} className={styles.pageTag} activeClassName={styles.activePageTag} style={{backgroundColor: props.color}}>
+        <Link to={`/${props.pageName}`} className={styles.pageTag} activeClassName={styles.activePageTag} partiallyActive={true} style={{backgroundColor: props.color}}>
             {props.pageName}
         </Link>
     )

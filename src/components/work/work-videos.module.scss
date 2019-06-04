@@ -32,33 +32,35 @@
     }
 }
 .itemTitle {
-    font-size: 1.125rem;
-    line-height: 1.111rem;
+    font-size: 1.1rem;
+    line-height: 1.43rem;
     color: $primary;
     font-weight: bold;
-    
+          
     @media #{$break-small} {
-      line-height: 1.115rem;  
+        font-size: 1.125rem;
+        line-height: 1.4625rem; 
     }
-    
     @media #{$break-large} {
-      line-height: 1.222rem;  
+        font-size: 1.22rem;
+        line-height: 1.586rem; 
     }
 }
 .byline {
     font-family: $font;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 1.1rem;
+    line-height: 1.43rem;
     color: $primary;
     font-weight: normal;
     font-style: italic;
     margin-bottom: 1rem;
-        
+            
     @media #{$break-small} {
-        line-height: 1.3rem;  
+        font-size: 1.125rem;
+        line-height: 1.4625rem; 
     }
     @media #{$break-large} {
-        font-size: 1.1rem;
-        line-height: 1.375rem;  
+        font-size: 1.22rem;
+        line-height: 1.586rem; 
     }
 }

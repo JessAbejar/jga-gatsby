@@ -66,27 +66,25 @@ const WritingPage = () => {
     return (
         <Layout>
             <SEO title="Writing" />
-            <main id="main">
-                <ArticleSection 
-                    title={data.markdownRemark.frontmatter.title}
-                    color="var(--writing)"
-                    content={data.markdownRemark.html}
-                />
-                <AsideSection 
-                    aside={data.pageAsideJson.aside}
-                    color="var(--writing)"
-                />
-                <WorkCards 
-                    title="Writing Samples"
-                    color="var(--writing)"
-                    items={data.card.edges}
-                />
-                <WorkVideos
-                    title="Performance Samples"
-                    color="var(--writing)"
-                    items={data.video.edges}
-                />
-            </main>
+            <ArticleSection 
+                title={data.markdownRemark.frontmatter.title}
+                color="var(--writing)"
+                content={data.markdownRemark.html}
+            />
+            <AsideSection 
+                aside={data.pageAsideJson.aside}
+                color="var(--writing)"
+            />
+            <WorkCards 
+                title="Writing Samples"
+                color="var(--writing)"
+                items={data.card.edges}
+            />
+            <WorkVideos
+                title="Performance Samples"
+                color="var(--writing)"
+                items={data.video.edges}
+            />
         </Layout>
     )
 }

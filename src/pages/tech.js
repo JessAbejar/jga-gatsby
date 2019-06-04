@@ -69,33 +69,31 @@ const TechPage = () => {
     return (
         <Layout>
             <SEO title="Tech" />
-            <main id="main">
-                <ArticleSection 
-                    title={data.article.frontmatter.title}
-                    color="var(--tech)"
-                    content={data.article.html}
-                />
-                <AsideSection 
-                    aside={data.aside.aside}
-                    color="var(--tech)"
-                />
-                <WorkSpotlight
-                    color="var(--tech)"
-                    spotlight={data.spotlight}
-                >
-                    <Link to="/mothercoders">
-                        Read more about my experience with MotherCoders
-                    </Link>
-                </WorkSpotlight>
-                <TechCards 
-                    title="Portfolio"
-                    items={data.cards.edges}
-                />
-                <ConnectSection
-                    links={connectIcons.tech.links} 
-                    color="var(--tech)"
-                />
-            </main>
+            <ArticleSection 
+                title={data.article.frontmatter.title}
+                color="var(--tech)"
+                content={data.article.html}
+            />
+            <AsideSection 
+                aside={data.aside.aside}
+                color="var(--tech)"
+            />
+            <WorkSpotlight
+                color="var(--tech)"
+                spotlight={data.spotlight}
+            >
+                <Link to="/tech/mothercoders">
+                    Read more about my experience with MotherCoders
+                </Link>
+            </WorkSpotlight>
+            <TechCards 
+                title="Portfolio"
+                items={data.cards.edges}
+            />
+            <ConnectSection
+                links={connectIcons.tech.links} 
+                color="var(--tech)"
+            />
         </Layout>
     )
 }

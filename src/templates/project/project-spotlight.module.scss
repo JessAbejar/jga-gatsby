@@ -1,0 +1,83 @@
+@import "../../styles/variables";
+
+.pageTitle {
+    font-family: $font;
+    font-size: 2rem;
+    color: var(--tech);
+    font-weight: bold;
+    
+    @media #{$break-small} {
+        font-size: 2.5rem;  
+    }
+    @media #{$break-large} {
+        font-size: 3rem;  
+    }
+}
+
+.spotlightContent {
+
+    h2 {
+        font-family: $font;
+        font-size: 1.625rem;
+        line-height: 1.54rem;
+        color: var(--tech);
+        font-weight: bold;
+        
+        @media #{$break-small} {
+            font-size: 2rem;  
+            line-height: 2rem;
+        }
+        
+        @media #{$break-large} {
+            font-size: 2.25rem;  
+            line-height: 2.25rem;
+        }   
+    }
+
+    h3 {
+        font-family: $font;
+        font-size: 1.375rem;
+        line-height: 1.363rem;
+        color: var(--tech);
+        font-weight: bold;
+        
+        @media #{$break-small} {
+          font-size: 1.5rem;  
+          line-height: 1.25rem;
+        }
+        
+        @media #{$break-large} {
+          font-size: 1.75rem;  
+          line-height: 1.75rem;
+        }
+    }
+    h4 {
+        font-size: 1.125rem;
+        line-height: 1.111rem;
+        color: var(--tech);
+        font-weight: bold;
+        
+        @media #{$break-small} {
+          line-height: 1.115rem;  
+        }
+        
+        @media #{$break-large} {
+          line-height: 1.222rem;  
+        }
+    }
+    p {
+        font-family: $font;
+        font-size: 1.1rem;
+        line-height: 1.43rem;
+        color: $body;
+            
+        @media #{$break-small} {
+            font-size: 1.125rem;
+            line-height: 1.4625rem;  
+        }
+        @media #{$break-large} {
+            font-size: 1.22rem;
+            line-height: 1.586rem;  
+        }
+    }
+}

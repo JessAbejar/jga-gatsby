@@ -5,6 +5,7 @@
     font-size: 1.375rem;
     color: $primary;
     font-weight: bold;
+    margin-bottom: .75rem;
     
     @media #{$break-small} {
       font-size: 2rem;  
@@ -26,6 +27,7 @@
 }
 .workImg {
     max-width: 350px;
+    padding: .5rem;
     
     img {
         width: 100%;
