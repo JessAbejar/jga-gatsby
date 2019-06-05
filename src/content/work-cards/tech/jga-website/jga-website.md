@@ -5,9 +5,9 @@ content_order: 1
 image: "./image.png"
 image_description: "Screenshot of JessicaGAbejar.com"
 main_skills: |
-    Adobe XD, Gatsby.js, React.js, GraphQL, Sass, CSS Modules, JSON, Markdown
+    Adobe XD, Gatsby.js, React.js, GraphQL, Sass
 description: |
-    Designed and developed a personal website highlighting all my passions and interests.
+    Designed and developed a personal website highlighting all my passions and interests as well as my past achievements.
 website: https://jessicagabejar.com
 source: https://github.com/JessAbejar/jga-gatsby
 ---

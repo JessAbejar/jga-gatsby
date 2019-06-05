@@ -13,7 +13,7 @@ const NotFoundPage = () => {
             <article>
                 <h1 className={styles.pageTitle}>Whoops!</h1>
                 <p>It looks like the page you are looking for does not exist!</p>
-                <Link to="/" className={styles.return}>Return to the Homepage</Link>
+                <Link to="/" className={styles.return}>&#8592; Return to the Homepage</Link>
             </article>
         </Layout>
     )

@@ -6,7 +6,7 @@ image_description: "Jessica Abejar with MotherCoders NYC Spring 2019 cohort."
 logo: "./logo.png"
 role: Student Success Coordinator
 description: |
-    In early 2019, I worked as the Student Success Coordinator for the inaugural cohort of MotherCoders NYC, a tech nonprofit that gives moms an opportunity to re-enter or level-up in the workplace by introducing them to the tech industry. In my role, I was the on-the-ground contact person between our leadership team, our students, and our partners and guests. I also had the opportunity to lead classes in HTML, CSS, JavaScript, Git, and GitHub, and played a major role in assisting our students with their projects.
+    In early 2019, I worked as the Student Success Coordinator for the inaugural cohort of MotherCoders NYC, a tech nonprofit that gives moms an opportunity to re-enter or level-up in the workplace by introducing them to the tech industry. In my role, I served as the on-the-ground coordinator and also had the opportunity to lead classes, playing a major role in our students' success.
 website: https://mothercoders.org
 ---
 ## Creating a Space Where We Can Build Code, Community, & Confidence

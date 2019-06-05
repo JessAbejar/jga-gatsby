@@ -60,6 +60,9 @@ const TechPage = () => {
                             website
                             source
                         }
+                        fields {
+                            slug
+                        }
                     }
                 }
             }

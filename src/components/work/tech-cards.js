@@ -1,4 +1,6 @@
 import React from "react"
+import { Link } from "gatsby"
+
 
 import styles from "./tech-cards.module.scss"
 
@@ -16,11 +18,13 @@ const TechCardItems = ({ items }) => {
                 <p className={styles.skillsDescription}>{item.node.frontmatter.main_skills}</p>
                 <p>{item.node.frontmatter.description}</p>
                 <div className={styles.techCardLinks}>
-                    <a href={item.node.frontmatter.website} target="_blank" rel="noopener noreferrer">
+                    <a href={item.node.frontmatter.website}>
                         Website
-                    </a> • <a href={item.node.frontmatter.source} target="_blank" rel="noopener noreferrer">
+                    </a> • <a href={item.node.frontmatter.source}>
                         Source
-                    </a>
+                    </a> • <Link to={`/tech/${item.node.fields.slug}`}>
+                        Process
+                    </Link>
                 </div>
             </div>
         ))

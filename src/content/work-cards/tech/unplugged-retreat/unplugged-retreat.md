@@ -3,7 +3,7 @@ title: Unplugged Retreat
 type: tech-project
 content_order: 2
 image: "./image.png"
-image_description: "Screenshot of Jubilee Austen Project"
+image_description: "Screenshot of Unplugged Retreat Project"
 main_skills: |
     Adobe Photoshop, HTML5, CSS3, Responsive Web Design, Media Queries, Flexbox
 description: |

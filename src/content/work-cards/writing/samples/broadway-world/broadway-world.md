@@ -5,9 +5,9 @@ content_order: 2
 image: "./image.png"
 image_description: "Broadway World logo."
 description: |
-    Regular reviews of dance shows throughout New York City, featuring reviews of major dance companies, dance festivals, and emerging artists
+    Regular reviews of dance shows throughout New York City, featuring major dance companies, dance festivals, and emerging artists
 ---
-I allow those unfamiliar with the dance world to get a peek into this multifaceted field by getting right to the heart of each piece. I use colorful language and non-dance terms to capture these dances in the moment as if readers were right in the audience. I especially love writing for emerging artists and dance festivals with very little exposure, helping to not only expand their audience but the field of dance itself.
+By getting right to the heart of each piece, I allow those unfamiliar with the dance world to get a peek into this multifaceted field. I use colorful language and non-dance terms to capture the artistry, athleticism, and emotion of these dances in the moment, as if readers were right there in the audience. I especially love writing for emerging artists and dance festivals with very little exposure, helping to not only expand these artists' reach but also expanding the field of dance itself.
 
 <aside class="sample">
 <h4 class="headingSmall">Samples</h4>

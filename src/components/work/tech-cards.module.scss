@@ -65,5 +65,11 @@
     margin-top: 1rem;
     a {
         color: var(--tech);
+        border-bottom: $link-border var(--tech);
+
+        &:hover {
+            border-bottom: $link-border-hover var(--tech);
+        }
     }
+
 }

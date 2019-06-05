@@ -69,11 +69,11 @@ a {
     color: $body;
     padding-bottom: 0rem;
     text-decoration: none;
-    border-bottom: 1px dotted $tertiary;
+    border-bottom: $link-border $tertiary;
 
     &:hover {
         text-decoration: none;
-        border-bottom: 1px solid $tertiary;
+        border-bottom: $link-border-hover $tertiary;
     }
             
     @media #{$break-small} {

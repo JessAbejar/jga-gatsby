@@ -9,7 +9,13 @@ import { faChevronCircleUp } from "@fortawesome/free-solid-svg-icons"
 const SecondaryFooter = () => {
     return (
         <Fragment>
-            <div className={styles.sitemap}>
+            <div className={styles.backToTop}>
+                <a href = "#top">
+                    Back to Top &nbsp;
+                    <FontAwesomeIcon icon={faChevronCircleUp} />
+                </a>
+            </div>
+            <nav className={styles.sitemap}>
                 <span>Sitemap:</span>
                 <div>
                     <Link to = "/dance">
@@ -34,13 +40,7 @@ const SecondaryFooter = () => {
                         About
                     </Link>
                 </div>
-            </div>
-            <div className={styles.backToTop}>
-                <a href = "#top">
-                    Back to Top &nbsp;
-                    <FontAwesomeIcon icon={faChevronCircleUp} />
-                </a>
-            </div>
+            </nav>
         </Fragment>
 
     )

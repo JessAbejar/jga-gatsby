@@ -33,4 +33,19 @@
             line-height: 1.4625rem; 
         }
     }
+    .itemDescription {
+        font-family: $font;
+        font-size: 1.1rem;
+        line-height: 1.43rem;
+        color: $body;
+            
+        @media #{$break-small} {
+            font-size: 1.125rem;
+            line-height: 1.4625rem;  
+        }
+        @media #{$break-large} {
+            font-size: 1.22rem;
+            line-height: 1.586rem;  
+        }
+    }
 }

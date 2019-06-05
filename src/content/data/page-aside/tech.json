@@ -9,7 +9,7 @@
             },
             {
                 "title": "Responsive Web Design",
-                "description": "CSS Flexbox • CSS Grid"
+                "description": "Media Queries • CSS Flexbox • CSS Grid"
             },
             {
                 "title": "Web Accessibility",
@@ -17,7 +17,7 @@
             },
             {
                 "title": "Command Line Basics and Version Control",
-                "description": "Mac OS Terminal • Git • GitHub"
+                "description": "Bash • Git • GitHub"
             },
             {
                 "title": "Web Design",

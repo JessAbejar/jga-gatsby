@@ -1,8 +1,18 @@
 @import "../../styles/variables";
 
+
+.backToTop {
+    width: 100%;
+    margin: 2rem 0;
+    
+    a {
+        border: none;
+    }
+}
+
 .sitemap {
     padding: 1rem 2rem;
-    margin: .5rem;
+    margin: 2rem .5rem;
     text-transform: lowercase;
     background-color: $aside;
     display: flex;
@@ -38,14 +48,5 @@
             margin-left: 1.2rem;
         }
 
-    }
-}
-
-.backToTop {
-    width: 100%;
-    margin: 2rem 0;
-    
-    a {
-        border: none;
     }
 }
