@@ -1,5 +1,14 @@
 @import "../styles/variables";
 
+.mainContainer {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 1rem;
+    padding-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
 .headingLarge {
     font-family: $font;
     font-size: 1.625rem;
@@ -33,13 +42,4 @@
       font-size: 1.75rem;  
       line-height: 1.75rem;
     }
-}
-.mainContainer {
-    margin: 0 auto;
-    max-width: 720px;
-    padding: 1rem;
-    padding-top: 2rem;
-
-    display: flex;
-    flex-direction: column;
 }

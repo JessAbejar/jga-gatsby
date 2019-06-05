@@ -18,7 +18,7 @@ const SkipToMain = () => {
 
 const Header = () => {
     return (
-        <header className={styles.header}>
+        <header id="top">
             <SkipToMain />
             <SiteTitle />
             <MainNavigation />

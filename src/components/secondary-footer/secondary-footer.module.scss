@@ -1,6 +1,6 @@
 @import "../../styles/variables";
 
-.secondaryNav {
+.sitemap {
     padding: 1rem 2rem;
     margin: .5rem;
     text-transform: lowercase;
@@ -15,7 +15,12 @@
 
     div {
         display: inherit;
-        flex-flow: row wrap;
+        flex-flow: column nowrap;
+        text-align: left;
+
+        @media #{$break-small} {
+            flex-flow: row wrap;
+        }
     }
 
     a {
@@ -28,8 +33,19 @@
         &:hover {
             border-bottom: $border $primary;
         }
+
+        @media #{$break-small} {
+            margin-left: 1.2rem;
+        }
+
     }
-    a.active {
-        border-bottom: $border $primary;
+}
+
+.backToTop {
+    width: 100%;
+    margin: 2rem 0;
+    
+    a {
+        border: none;
     }
 }

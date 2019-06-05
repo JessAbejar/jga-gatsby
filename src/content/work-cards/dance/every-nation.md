@@ -1,10 +1,10 @@
 ---
-title: Lord, Every Nation - National College "Preaching in Action" Conference 2018
+title: National College "Preaching in Action" Conference
 type: dance-video-card
 content_order: 6
-year created: 2018
-by: Workshop and Choreographed by Jessica Abejar
+year created: 2014
+by: Workshop Facilitator and Commissioning Liturgy Choreographer
 description: |
-    "Lord, Every Nation" was presented during the Psalm at the Commissioning Liturgy for the National College “Preaching in Action” Conference in 2018 at Caldwell University, Caldwell, NJ. Students leading the dance were taught the choreography during the conference's workshop and presented the dance the next day. The congregation was taught the movements and was invited to not only sing but also dance. Music is by Jesse Manibusan and sung by the conference choir.
+    Since 2014, I have taught workshops at the National College “Preaching in Action” Conference, a project of Dominican Youth Movement USA. I introduced students to sacred and liturgical dance while also prepared them for presenting at the Commissioning Liturgy the following day. Each dance I've led is unique- some choreographed by myself, others inspired by their own creative movement, some using props, and some where we encouraged the congregation to follow. The dance seen here was performed in 2018, with music sung by the conference choir.
 ---
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vGnYifwDmKY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bCjyKg7iapU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
