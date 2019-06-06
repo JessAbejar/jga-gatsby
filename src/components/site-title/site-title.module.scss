@@ -21,6 +21,11 @@ a.siteTitle {
     @media #{$break-large} {
         font-size: 5.5rem; 
     }
+    &:hover {
+        padding: 0;
+        border: none;
+        text-decoration: none;
+    }
 }
 figure {
     margin: 0;
