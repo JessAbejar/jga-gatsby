@@ -1,0 +1,28 @@
+{
+    "page":"events",
+    "aside": {
+        "heading": "Academic & Career Highlights",
+        "items": [
+            {
+                "title": "Professional Diploma in Meeting and Convention Management",
+                "description": "New York University's School of Professional Studies, New York, NY"
+            },
+            {
+                "title": "Organization of the Year",
+                "description": "FLOW, Poetry and Spoken Word Club, College of Mount Saint Vincent, Riverdale, NY"
+            },
+            {
+                "title": "Student Organization Community Service Award",
+                "description": "FLOW's Flashlight Vigil, College of Mount Saint Vincent, Riverdale, NY"
+            },
+            {
+                "title": "Co-Host",
+                "description": "New York Catholic Youth Day 2016, Yonkers, NY"
+            },
+            {
+                "title": "Assistant Stage Manager",
+                "description": "New York Catholic Youth Day 2017, Yonkers, NY"
+            }
+        ]
+    }
+}

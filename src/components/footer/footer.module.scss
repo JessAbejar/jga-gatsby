@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    text-align: center;
+    
+    .footerText {
+        font-family: $font;
+        font-size: 1rem;
+        line-height: 1rem;
+        color: $primary;
+    }
+}

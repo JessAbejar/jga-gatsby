@@ -1,0 +1,52 @@
+@import "../../styles/variables";
+
+
+.backToTop {
+    width: 100%;
+    margin: 2rem 0;
+    
+    a {
+        border: none;
+    }
+}
+
+.sitemap {
+    padding: 1rem 2rem;
+    margin: 2rem .5rem;
+    text-transform: lowercase;
+    background-color: $aside;
+    display: flex;
+    flex-direction: row;
+
+    span {
+        font-style: italic;
+        color: $primary;
+    }
+
+    div {
+        display: inherit;
+        flex-flow: column nowrap;
+        text-align: left;
+
+        @media #{$break-small} {
+            flex-flow: row wrap;
+        }
+    }
+
+    a {
+        color: $primary;
+        margin-left: 2rem;
+        padding-bottom: .5rem;
+        text-decoration: none;
+        border-bottom: $border transparent;
+    
+        &:hover {
+            border-bottom: $border $primary;
+        }
+
+        @media #{$break-small} {
+            margin-left: 1.2rem;
+        }
+
+    }
+}

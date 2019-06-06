@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.secondaryNav {
+    padding: 1rem 2rem;
+    margin: .5rem;
+    text-transform: lowercase;
+    background-color: $aside;
+    display: flex;
+    flex-direction: row;
+
+    span {
+        font-style: italic;
+        color: $primary;
+    }
+
+    div {
+        display: inherit;
+        flex-flow: row wrap;
+    }
+
+    a {
+        color: $primary;
+        margin-left: 2rem;
+        padding-bottom: .5rem;
+        text-decoration: none;
+        border-bottom: $border transparent;
+    
+        &:hover {
+            border-bottom: $border $primary;
+        }
+    }
+    a.active {
+        border-bottom: $border $primary;
+    }
+}

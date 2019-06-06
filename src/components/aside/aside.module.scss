@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+
+.aside {
+    .asideHeading {
+        font-family: $font;
+        font-size: 1.375rem;
+        line-height: 1.154rem;
+        color: $primary;
+        font-weight: bold;
+        
+        @media #{$break-small} {
+            font-size: 1.5rem;  
+            line-height: 1.25rem;
+        }
+        @media #{$break-large} {
+            font-size: 1.75rem; 
+        }
+    }
+    .itemTitle {
+        font-family: $font;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        font-weight: bold;
+        color: $primary;
+        margin: 0;
+          
+        @media #{$break-small} {
+            font-size: 1.1rem;
+            line-height: 1.43rem; 
+        }
+        @media #{$break-large} {
+            font-size: 1.125rem;
+            line-height: 1.4625rem; 
+        }
+    }
+    .itemDescription {
+        font-family: $font;
+        font-size: 1.1rem;
+        line-height: 1.43rem;
+        color: $body;
+            
+        @media #{$break-small} {
+            font-size: 1.125rem;
+            line-height: 1.4625rem;  
+        }
+        @media #{$break-large} {
+            font-size: 1.22rem;
+            line-height: 1.586rem;  
+        }
+    }
+}

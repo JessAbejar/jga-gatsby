@@ -1,0 +1,29 @@
+@import "../styles/variables";
+
+article {
+    margin: 2rem 0;
+}
+.pageTitle {
+    font-family: "Cookie", cursive;
+    font-size: 3rem;
+    color: $primary;
+    font-weight: bold;
+    
+    @media #{$break-small} {
+        font-size: 4rem;  
+    }
+    @media #{$break-large} {
+        font-size: 5rem;  
+    }
+}
+.return {
+    width: fit-content;
+    padding-bottom: .5rem;
+    border-bottom: $border transparent;
+    
+
+    &:hover {
+        border-bottom: $border $primary;
+        text-decoration: none;
+    }
+}

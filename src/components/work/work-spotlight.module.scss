@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+
+.workHeading {
+    font-family: $font;
+    font-size: 1.375rem;
+    color: $primary;
+    font-weight: bold;
+    margin-bottom: .75rem;
+    
+    @media #{$break-small} {
+      font-size: 2rem;  
+    }
+    @media #{$break-large} {
+      font-size: 2.25rem;  
+    }
+}
+.workGrid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center;
+    grid-gap: .5rem;
+}
+.workItem {
+    max-width: 350px;
+    padding: .5rem;
+}
+.workImg {
+    max-width: 350px;
+    padding: .5rem;
+    
+    img {
+        width: 100%;
+    }
+}
+.itemTitle {
+    font-size: 1.125rem;
+    line-height: 1.111rem;
+    color: $primary;
+    font-weight: bold;
+    
+    @media #{$break-small} {
+      line-height: 1.115rem;  
+    }
+    
+    @media #{$break-large} {
+      line-height: 1.222rem;  
+    }
+}

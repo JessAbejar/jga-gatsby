@@ -1,3 +1,8 @@
+# Hello, welcome to the source code for my personal website.
+This is the source code for my personal website, jessicagabejar.com. I used Gatsby's hello-world starter, which is the most basic of Gatsby starters, and installed plugins based off of some great starters including the [gatsby-starter default](https://github.com/gatsbyjs/gatsby-starter-default), [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog), and [gatsby-advanced-starter](https://github.com/Vagr9K/gatsby-advanced-starter).
+
+I owe a lot of getting this site up and running thanks to the [official tutorial](https://www.gatsbyjs.org/tutorial/) and [docs](https://www.gatsbyjs.org/docs/) plus [plugin docs](https://www.gatsbyjs.org/plugins/). Also a big thank you to [Andrew Mead's The Great Gatsby Bootcamp Tutorial](https://youtu.be/8t0vNu2fCCM), which got me started on learning Gatsby.
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">

@@ -1,0 +1,205 @@
+@import "../../styles/variables";
+
+.pageTitle {
+    font-family: $font;
+    font-size: 2rem;
+    color: var(--tech);
+    font-weight: bold;
+    
+    @media #{$break-small} {
+        font-size: 2.5rem;  
+    }
+    @media #{$break-large} {
+        font-size: 3rem;  
+    }
+}
+.headingLarge {
+    font-family: $font;
+    font-size: 1.625rem;
+    line-height: 1.54rem;
+    color: var(--tech);
+    font-weight: bold;
+    
+    @media #{$break-small} {
+        font-size: 2rem;  
+        line-height: 2rem;
+    }
+    
+    @media #{$break-large} {
+        font-size: 2.25rem;  
+        line-height: 2.25rem;
+    }   
+}
+.spotlightContent {
+
+    h2 {
+        font-family: $font;
+        font-size: 1.625rem;
+        line-height: 1.54rem;
+        color: var(--tech);
+        font-weight: bold;
+        margin: 4rem 0 2rem 0;
+        
+        @media #{$break-small} {
+            font-size: 2rem;  
+            line-height: 2rem;
+        }
+        
+        @media #{$break-large} {
+            font-size: 2.25rem;  
+            line-height: 2.25rem;
+        }   
+    }
+    h3 {
+        font-family: $font;
+        font-size: 1.375rem;
+        line-height: 1.363rem;
+        color: var(--tech);
+        font-weight: bold;
+        margin: 2rem 0;
+        
+        @media #{$break-small} {
+            font-size: 1.5rem;  
+            line-height: 1.25rem;
+        }
+        
+        @media #{$break-large} {
+            font-size: 1.75rem;  
+            line-height: 1.75rem;
+        }
+    }
+    h4 {
+        font-size: 1.125rem;
+        line-height: 1.111rem;
+        color: var(--tech);
+        font-weight: bold;
+        margin: 2rem 0;
+        
+        @media #{$break-small} {
+            font-size: 1.22rem;
+            line-height: 1.586rem;    
+        }
+        
+        @media #{$break-large} {
+            font-size: 1.375rem;
+            line-height: 1.363rem;
+        }
+    }
+    blockquote {
+        font-size: 1.125rem;
+        line-height: 1.111rem;
+        color: var(--tech);
+        color: var(--tech);
+        font-weight: bold;
+        font-style: italic;
+        margin: 2rem;
+        padding: .5rem 1rem .5rem 2rem;
+        border-left: $border var(--tech);
+        
+        @media #{$break-small} {
+            font-size: 1.22rem;
+            line-height: 1.586rem;   
+        }
+        
+        @media #{$break-large} {
+            font-size: 1.375rem;
+            line-height: 1.363rem; 
+        }
+    }
+    p,
+    li {
+        font-family: $font;
+        font-size: 1.1rem;
+        line-height: 1.43rem;
+        color: $body;
+            
+        @media #{$break-small} {
+            font-size: 1.125rem;
+            line-height: 1.4625rem;  
+        }
+        @media #{$break-large} {
+            font-size: 1.22rem;
+            line-height: 1.586rem;  
+        }
+    }
+    li {
+        margin-left: 1rem;
+    }
+    div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @media #{$break-small} {
+            flex-direction: row;
+        }
+
+        figure {
+            flex-basis: 100%;
+
+            @media #{$break-small} {
+                flex-basis: 45%;
+            }
+        }
+    }
+    aside {
+        h3,
+        h4,
+        h5 {
+            font-family: $font;
+            font-size: 1.1rem;
+            line-height: 1.43rem;
+            color: var(--tech);
+            font-weight: bold;
+            margin: 0 0 1.45rem 0;
+                
+            @media #{$break-small} {
+                font-size: 1.125rem;
+                line-height: 1.4625rem;  
+            }
+            @media #{$break-large} {
+                font-size: 1.22rem;
+                line-height: 1.586rem;  
+            }
+        }
+        blockquote {
+            font-family: $font;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            color: $body;
+            font-weight: normal;
+            font-style: normal;
+            border: none;
+            margin: 1rem 1rem 1rem .5rem;
+            padding: .5rem 0 .5rem 1rem;
+            border-left: $border var(--tech);
+                
+            @media #{$break-small} {
+                font-size: 1.1rem;
+                line-height: 1.43rem;  
+            }
+            @media #{$break-large} {
+                font-size: 1.125rem;
+                line-height: 1.4625rem; 
+            }
+        }
+        span {
+            font-family: $font;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            color: var(--tech);
+            margin-top: 1rem;
+            display: block;
+            text-align: right;
+                
+            @media #{$break-small} {
+                font-size: 1.1rem;
+                line-height: 1.43rem;   
+            }
+            @media #{$break-large} {
+                font-size: 1.125rem;
+                line-height: 1.4625rem;  
+            }
+        }
+    }
+}

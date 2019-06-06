@@ -1,0 +1,75 @@
+@import "../../styles/variables";
+
+.workHeading {
+    font-family: $font;
+    font-size: 1.375rem;
+    color: var(--tech);
+    font-weight: bold;
+    
+    @media #{$break-small} {
+      font-size: 2rem;  
+    }
+    @media #{$break-large} {
+      font-size: 2.25rem;  
+    }
+}
+.workGrid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center;
+    grid-gap: .5rem;
+}
+.workItem {
+    max-width: 350px;
+    padding: .5rem;
+}
+.workImg {
+    max-width: 350px;
+    
+    img {
+        width: 100%;
+    }
+}
+.itemTitle {
+    font-size: 1.125rem;
+    line-height: 1.111rem;
+    color: var(--tech);
+    font-weight: bold;
+    
+    @media #{$break-small} {
+      line-height: 1.115rem;  
+    }
+    
+    @media #{$break-large} {
+      line-height: 1.222rem;  
+    }
+}
+.skillsDescription {
+    font-family: $font;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: $primary;
+    font-style: italic;
+    margin-bottom: 1rem;
+        
+    @media #{$break-small} {
+        line-height: 1.3rem;  
+    }
+    @media #{$break-large} {
+        font-size: 1.1rem;
+        line-height: 1.375rem;  
+    }
+}
+.techCardLinks {
+    margin-top: 1rem;
+    a {
+        color: var(--tech);
+        border-bottom: $link-border var(--tech);
+
+        &:hover {
+            border-bottom: $link-border-hover var(--tech);
+        }
+    }
+
+}

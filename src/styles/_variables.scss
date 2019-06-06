@@ -1,0 +1,16 @@
+$break-small: 'only screen and (min-width: 768px)';
+$break-large: 'only screen and (min-width: 1200px)';
+
+$font: "Helvetica", sans-serif;
+
+$primary: var(--primary);
+$secondary: var(--secondary);
+$tertiary: var(--tertiary);
+$body: var(--body);
+$aside: var(--aside);
+$shadow: var(--shadow);
+
+$border: 3px solid;
+
+$link-border: 1px dotted;
+$link-border-hover: 1px solid;

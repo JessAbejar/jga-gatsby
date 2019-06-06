@@ -1,0 +1,28 @@
+{
+    "page": "tech", 
+    "aside": {
+        "heading": "Skills & Tools",
+        "items": [
+            {
+                "title": "Fundamentals of Front-End Web Development",
+                "description": "HTML/5 • CSS/3 • JavaScript/ES6"
+            },
+            {
+                "title": "Responsive Web Design",
+                "description": "Media Queries • CSS Flexbox • CSS Grid"
+            },
+            {
+                "title": "Web Accessibility",
+                "description": "Semantic HTML • WCAG 2.0, 2.1"
+            },
+            {
+                "title": "Command Line Basics and Version Control",
+                "description": "Bash • Git • GitHub"
+            },
+            {
+                "title": "Web Design",
+                "description": "Adobe Photoshop • Adobe XD"
+            }
+        ]
+    }
+}

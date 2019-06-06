@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.pageTitle {
+    font-family: $font;
+    font-size: 2rem;
+    color: var(--tech);
+    font-weight: bold;
+    
+    @media #{$break-small} {
+        font-size: 2.5rem;  
+    }
+    @media #{$break-large} {
+        font-size: 3rem;  
+    }
+}

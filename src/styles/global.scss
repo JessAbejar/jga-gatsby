@@ -1,0 +1,88 @@
+ @import "./variables";
+ 
+ :root {
+    --font: "Helvetica", sans-serif;
+
+    --break-small: "only screen and (min-width: 768px)";
+    --break-large: "only screen and (min-width: 1200px)";
+
+    --primary: hsl(0, 0%, 22%);
+    --secondary: hsl(0, 0%, 100%);
+    --tertiary: hsl(0, 0%, 52%);
+    --body: hsl(0, 0%, 32%);
+    --aside: hsl(0, 0%, 96%);
+    --dance: hsl(260, 100%, 50%);
+    --wellness: hsl(337, 91%, 45%);
+    --events: hsl(228, 70%, 53%);
+    --writing: hsl(300, 100%, 35%);
+    --tech: hsl(204, 64%, 40%);
+    --shadow: 0px 3px 6px 0px rgba(55,55,55,0.6);
+
+    @media (prefers-color-scheme: dark) {
+        --primary: hsl(0, 0%, 100%);
+        --secondary: hsl(0, 0%, 22%);
+        --tertiary: hsl(0, 0%, 70%);
+        --body: hsl(0, 0%, 90%);
+        --aside: hsl(0, 0%, 32%);
+        --dance: hsl(260, 100%, 90%);
+        --wellness: hsl(337, 91%, 85%);
+        --events: hsl(228, 70%, 85%);
+        --writing: hsl(300, 100%, 90%);
+        --tech: hsl(204, 64%, 80%);
+        --shadow: 0px 3px 6px 0px rgba(158,158,158,0.4);
+    }
+}
+body {
+    background-color: $secondary;
+}
+article {
+    margin: 1rem 0;
+    padding: 4rem 0;
+}
+aside {
+    background-color: $aside;
+    margin: 4rem 0;
+    padding: 3rem 1.5rem 2rem 1.5rem;
+}
+section {
+    margin: 1rem 0;
+    padding: 4rem 0;
+}
+p {
+    font-family: $font;
+    font-size: 1.1rem;
+    line-height: 1.43rem;
+    color: $body;
+        
+    @media #{$break-small} {
+        font-size: 1.125rem;
+        line-height: 1.4625rem;  
+    }
+    @media #{$break-large} {
+        font-size: 1.22rem;
+        line-height: 1.586rem;  
+    }
+}
+a {
+    font-family: $font;
+    font-size: 1.1rem;
+    line-height: 1.43rem;
+    color: $body;
+    padding-bottom: 0rem;
+    text-decoration: none;
+    border-bottom: $link-border $tertiary;
+
+    &:hover {
+        text-decoration: none;
+        border-bottom: $link-border-hover $tertiary;
+    }
+            
+    @media #{$break-small} {
+        font-size: 1.125rem;
+        line-height: 1.4625rem; 
+    }
+    @media #{$break-large} {
+        font-size: 1.22rem;
+        line-height: 1.586rem; 
+    }
+}
