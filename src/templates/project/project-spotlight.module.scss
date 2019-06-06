@@ -143,9 +143,24 @@
         }
     }
     aside {
-        p {
+        h3,
+        h4,
+        h5 {
+            font-family: $font;
+            font-size: 1.1rem;
+            line-height: 1.43rem;
             color: var(--tech);
             font-weight: bold;
+            margin: 0 0 1.45rem 0;
+                
+            @media #{$break-small} {
+                font-size: 1.125rem;
+                line-height: 1.4625rem;  
+            }
+            @media #{$break-large} {
+                font-size: 1.22rem;
+                line-height: 1.586rem;  
+            }
         }
         blockquote {
             font-family: $font;

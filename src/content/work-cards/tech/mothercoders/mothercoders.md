@@ -99,7 +99,7 @@ I assisted them individually with projects and showed them how to debug, trouble
 
 <aside>
 
-<p>What Students are Saying</p>
+##### What Students are Saying
 
 <blockquote>"Jessica’s teaching approach was refreshing, it was such a pleasure coming in every Saturday to an energetic mindset. When learning technical concepts, it’s very helpful to have someone explain in non-technical terms. In addition, she went above and beyond in providing supportive resources to ensure the learning modules were grasped. She took time to develop a relationship with her students, which built trust. That allowed me to approach her any time I had questions or needed help. Jessica has a very professional and empathetic demeanor a perfect combination for any opportunity she is given."</blockquote>
 <span>Erica Ramirez, Student at MotherCoders NYC Spring 2019</span>
@@ -133,7 +133,7 @@ I was also available for homework and project help. In particular, for Demo Day,
 
 <aside>
 
-<p>What Students are Saying</p>
+##### What Students are Saying
 
 <blockquote>"As our group's Student Success Coordinator, Jessica made sure that all these goals are reached. She assisted us with our coursework and projects, arranged onsite childcare, coordinated with guest speakers and media, as well as curated weekly informational emails and the MotherCoders Slack channel. Jessica was integral to the success of the program."</blockquote>
 <span>Svetlana Shammasova, Student at MotherCoders NYC Spring 2019</span>
@@ -149,7 +149,7 @@ As the on-the-ground coordinator for a distributed team, our leadership team dep
 
 <aside>
 
-<p>What My Team is Saying</p>
+#### What My Team is Saying
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/_jessicode?ref_src=twsrc%5Etfw">@_jessicode</a> is the best thing that&#39;s happened to us since onsite childcare <a href="https://t.co/WH07nYC1XL">https://t.co/WH07nYC1XL</a></p>&mdash; MotherCoders (@MotherCoders) <a href="https://twitter.com/MotherCoders/status/1118962370926092288?ref_src=twsrc%5Etfw">April 18, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -175,7 +175,7 @@ MotherCoders was an incredible experience to be a part of and I was glad that I 
 
 <aside>
 
-<p>What Students are Saying</p>
+### What Students are Saying 
 
 <blockquote>"Jessica is a wonderful and thoughtful teacher, her approach to teaching web development is comprehensive and direct. She cares about whether or not students fully grasp concepts and she takes the time to help not only in class but also one on one. She is easy to talk to and can be approached with any question or problem. Jessica believes in her students' potential especially during topics that are rigorous to learn. Although our program is over, Jessica is still checking in on our development and is vocal about our continued success."</blockquote>
 <span>Flor Marshall, Student at MotherCoders NYC Spring 2019</span>

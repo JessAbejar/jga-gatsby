@@ -9,6 +9,7 @@ module.exports = {
     title: `Jessica G. Abejar`,
     description: `Jessica G. Abejar is a multipotentialite delving into dance, wellness, events, writing, and now integrating tech.`,
     author: `Jessica G. Abejar`,
+    twitterUsername: `@_jessicode`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
