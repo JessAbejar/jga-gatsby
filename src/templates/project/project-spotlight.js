@@ -31,7 +31,7 @@ const ProjectSpotlight = (props) => {
             <article>
                 <hgroup>
                     <h1 className={styles.pageTitle}>{props.data.markdownRemark.frontmatter.title}</h1>
-                    <h2>{props.data.markdownRemark.frontmatter.role}</h2>
+                    <h2 className={styles.headingLarge}>{props.data.markdownRemark.frontmatter.role}</h2>
                 </hgroup>
                 <p>{props.data.markdownRemark.frontmatter.description}</p>
                 <img 
