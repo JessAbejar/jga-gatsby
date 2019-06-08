@@ -6,6 +6,8 @@ image: "./image.png"
 image_description: "Screenshot of Unplugged Retreat Project"
 main_skills: |
     Adobe Photoshop, HTML5, CSS3, Responsive Web Design, Media Queries, Flexbox
+other_skills: |
+    Visual Studio Code, HTML5 Boilerplate, Chrome DevTools, Git, GitHub, W3C HTML & CSS Validation, ChromeVox, VoiceOver, WAVE Accessibility Checker, AChecker, Lighthouse
 description: |
     Developed a website for the Unplugged Retreat based on a Photoshop design comp (a Skillcrush project).
 website: https://jessabejar.github.io/unplugged-retreat/
@@ -25,29 +27,27 @@ This entire process helped not only in writing and styling content but also in o
 
 In the end, not only was I proud of the final product but I was extremely proud of the process that I had developed. I hope to use the process of building this project as the framework for how I complete all my processes in the future.
 
-## Project Details
-
-**Title**: Unplugged Retreat
-
-**Description:** Developed a website for the Unplugged Retreat based on a Photoshop design comp (a Skillcrush project).
-
-**Main Skills:** Adobe Photoshop, HTML5, CSS3, Responsive Web Design, Media Queries, Flexbox
-
-**Other Skills & Tools:** Visual Studio Code, HTML5 Boilerplate, Google DevTools, Git, GitHub, W3C HTML & CSS Validation, ChromeVox, VoiceOver, WAVE Accessibility Checker, AChecker, Lighthouse
-
 ## Pre-Planning: HTML
 
 After printing out the design comps, I identified the different parts of each page, dividing the website into components based on the content. I divided each page into a header, a main section, and a footer, with each of these sections broken down further into sub-sections. Each sub-section component was then broken down further into elements. I also took this opportunity to assign most of the components and elements a class or ID, to be used for CSS.
 
-### * Example: Header Component
+<aside>
+
+### Example: Header Component
 
 For this project, the header was divided into a logo element and a navigation element. Navigation was further broken down into an unordered list with each link being a list item.
 
 After identifying each element, I started comparing the layouts of each page across the different device sizes, in this case - mobile, tablet, and desktop layouts. This would later help in determining how to write media queries for each element, and because of that, it confirmed which elements should be grouped together.
 
-### * Example: Services Component
+</aside>
+
+<aside>
+
+### Example: Services Component
 
 The services component was one section that changed the most across browser sizes. In the mobile version it starts off as elements in a single column, moving to two columns in the tablet version, and three in the desktop version. Keeping this in mind, I had originally grouped the services elements separately and in its own single container; however, I later “ungrouped” them and made the entire services section component itself flexible, allowing for the heading to remain at a 100% width while allowing for the single service elements to fluidly change in width, and subsequently, its layout across browsers. Even with this minor change during the process, pre-planning had allowed me to easily identify it and helped remove unnecessary extraneous code in the process. 
+
+</aside>
 
 ## Coding the HTML
 
@@ -57,9 +57,13 @@ HTML was tested for errors using the Nu Html Checker. The site was also tested f
 
 Each page of the Unplugged Retreat website in the browser, HTML only without CSS styling.
 
-### * Semantic HTML in Headings
+<aside>
 
-Making sure that the content appeared in a logical manner was of utmost importance. As such, heading levels were used for function rather than for styling and were determined by order and context. As we will later see in the CSS - Text Styling section of this article, a styled heading class was created to match heading text similar stylings. In some instances, two headings could have the same styles in the design comp but were determined to be at different levels so that assistive technology can understand the information in a logical manner. On the front page, the aside or complementary component had two headings one reading "Want to join the next retreat?" and "Find out more". They both had the same stylings and could have been in the same heading level. But in the context of the *entire* page, it made more sense for the former heading to be at <h2> and the latter to be at <h3> to connect the content together.
+### Semantic HTML in Headings
+
+Making sure that the content appeared in a logical manner was of utmost importance. As such, heading levels were used for function rather than for styling and were determined by order and context. As we will later see in the CSS - Text Styling section of this article, a styled heading class was created to match heading text similar stylings. In some instances, two headings could have the same styles in the design comp but were determined to be at different levels so that assistive technology can understand the information in a logical manner. On the front page, the aside or complementary component had two headings one reading "Want to join the next retreat?" and "Find out more". They both had the same stylings and could have been in the same heading level. But in the context of the *entire* page, it made more sense for the former heading to be at `<h2>` and the latter to be at `<h3>` to connect the content together.
+
+</aside>
 
 ### GitHub Flow
 
@@ -73,9 +77,13 @@ The CSS is then planned out. The major part of determining how to style each com
 
 The website was designed to have a responsive layout. The first part was determining which section components were flexible, meaning which had children whose width was fluid and whose layout and placement changed at certain breakpoints. The second step was to then determine the behavior of the child elements, ie: going from full-width (arranged in a single column) to half-width (arranged in two columns) or even one-third-width (arranged in three columns). Elements that exhibited similar behavior at certain breakpoints were given the same class name rather than simply assigning these properties and values to the element itself.
 
-### * Challenge: Margins and Padding
+<aside>
+
+### Challenge: Margins and Padding
 
 One of the challenges I faced was not considering margins and padding with the layout. I didn't notice this until after all styles were added and had imagined this to be a difficult process. But I approached this challenge in the same manner - looking at each element individually and then identifying any patterns. For the most part, most elements with the same flexbox grid behaviors also had the same margin and padding, so these values were added to the styling of that class. Elements with completely different margin and padding values had their values added specifically to those elements using ID names and other selectors of higher specificity.
+
+</aside>
 
 ### Text Stylings
 
@@ -85,9 +93,13 @@ Patterns were then identified based on these properties. After grouping the elem
 
 Spreadsheets grouping, sorting, and identifying text elements with similar property patterns.
 
-### * Example: Heading Text Styles
+<aside>
+
+### Example: Heading Text Styles
 
 As mentioned earlier, heading level was determined by its order in presenting content logically and was separate from styling. While many elements had similar levels, they had different styling, and while their levels could have changed to keep styling grouped with their HTML levels, this would not present the content in a logical order. So heading styles were identified by the class names “heading-lg”, “heading-md-lg”, "heading-md," and “heading-sm." "Heading-md-lg" was added later as a group of headings became larger than similar headings at larger breakpoints.
+
+</aside>
 
 ### Individual Styles
 

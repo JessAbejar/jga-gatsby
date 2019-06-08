@@ -77,7 +77,7 @@ const DancePage = () => {
                 color="var(--dance)"
                 spotlight={data.spotlight}
             >
-                <a href="https://themovingprayer.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://themovingprayer.com" target="_blank" rel="noopener noreferrer" style={{ color: "var(--dance)" }}>
                     Learn more on The Moving Prayer website
                 </a> 
             </WorkSpotlight>

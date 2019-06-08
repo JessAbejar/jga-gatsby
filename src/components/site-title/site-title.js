@@ -19,9 +19,7 @@ const SiteTitle = () => {
     return (
         <Link to="/" className={styles.siteTitle}>
             {data.site.siteMetadata.title}
-            <figure>
-                <img src={logo} alt="" className={styles.logo}/>
-            </figure>
+            <img src={logo} alt="" className={styles.logo}/>
         </Link>
     )
 }

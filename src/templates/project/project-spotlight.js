@@ -18,7 +18,6 @@ export const query = graphql`
                 }
                 image_description
             }
-            tableOfContents(maxDepth: 3)
             html
         }
     }

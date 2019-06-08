@@ -85,7 +85,7 @@ const TechPage = () => {
                 color="var(--tech)"
                 spotlight={data.spotlight}
             >
-                <Link to="/tech/mothercoders">
+                <Link to="/tech/mothercoders" style={{ color: "var(--tech)" }}>
                     Read more about my experience with MotherCoders
                 </Link>
             </WorkSpotlight>

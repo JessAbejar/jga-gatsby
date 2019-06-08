@@ -6,6 +6,8 @@ image: "./image.png"
 image_description: "Screenshot of JessicaGAbejar.com"
 main_skills: |
     Adobe XD, Gatsby.js, React.js, GraphQL, Sass
+other_skills: |
+    Content Creation, Notion, Paper Wireframes, Visual Studio Code, Node.js, npm, JSON, Markdown, Chrome DevTools, Git, GitHub, ChromeVox, VoiceOver, WAVE Accessibility Checker, AChecker, Lighthouse
 description: |
     Designed and developed a personal website highlighting all my passions and interests as well as my past achievements.
 website: https://jessicagabejar.com
