@@ -21,8 +21,9 @@ const Header = () => {
         <header id="top">
             <SkipToMain />
             <SiteTitle />
-            <MainNavigation />
-            <SecondaryNavigation />
+            <MainNavigation>
+                <SecondaryNavigation />
+            </MainNavigation>
         </header>
     )    
 }

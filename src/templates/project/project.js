@@ -5,6 +5,10 @@ import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo/seo"
 
 import styles from "./project.module.scss"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLink } from "@fortawesome/free-solid-svg-icons"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+
 
 export const query = graphql`
     query($slug: String!) {
@@ -32,20 +36,30 @@ const Project = (props) => {
             <SEO title={props.data.markdownRemark.frontmatter.title}/>
             <article>
                 <h1 className={styles.pageTitle}>{props.data.markdownRemark.frontmatter.title}</h1>
+                <div className={styles.linkIcons}>
+                    <FontAwesomeIcon icon={faLink} aria-hidden="true" /> 
+                    <a href={props.data.markdownRemark.frontmatter.website}>
+                        Website
+                    </a>
+                    <FontAwesomeIcon icon={faGithub} aria-hidden="true" /> 
+                    <a href={props.data.markdownRemark.frontmatter.source}>
+                        Source
+                    </a>
+                </div>
                 <p>{props.data.markdownRemark.frontmatter.description}</p>
                 <ul className={styles.skillsList}>
                     <li>
-                        <strong>Main Skills</strong>: {props.data.markdownRemark.frontmatter.main_skills}
+                        <strong>Main Skills &amp; Tools</strong>: {props.data.markdownRemark.frontmatter.main_skills}
                     </li>
                     <li>
-                        <strong>Other Skills</strong>: {props.data.markdownRemark.frontmatter.other_skills}
+                        <strong>Other Skills &amp; Tools</strong>: {props.data.markdownRemark.frontmatter.other_skills}
                     </li>
                 </ul>
                 <img 
                     src={props.data.markdownRemark.frontmatter.image.publicURL}
                     alt={props.data.markdownRemark.frontmatter.image_description}
                 />
-                <div dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}} className={styles.projectContent}/>
+                <section dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}} className={styles.projectContent}/>
             </article>
         </Layout>
     )
