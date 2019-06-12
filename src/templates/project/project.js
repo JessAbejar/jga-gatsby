@@ -39,11 +39,11 @@ const Project = (props) => {
                 <div className={styles.linkIcons}>
                     <FontAwesomeIcon icon={faLink} aria-hidden="true" /> 
                     <a href={props.data.markdownRemark.frontmatter.website}>
-                        Website
+                        Live Website
                     </a>
                     <FontAwesomeIcon icon={faGithub} aria-hidden="true" /> 
                     <a href={props.data.markdownRemark.frontmatter.source}>
-                        Source
+                        Source Code
                     </a>
                 </div>
                 <p>{props.data.markdownRemark.frontmatter.description}</p>
@@ -60,6 +60,23 @@ const Project = (props) => {
                     alt={props.data.markdownRemark.frontmatter.image_description}
                 />
                 <section dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}} className={styles.projectContent}/>
+                <aside>
+                    <h2 className={styles.pageTitle}>{props.data.markdownRemark.frontmatter.title}</h2>
+                    <div className={styles.linkIcons}>
+                        <FontAwesomeIcon icon={faLink} aria-hidden="true" /> 
+                        <a href={props.data.markdownRemark.frontmatter.website}>
+                            Live Website
+                        </a>
+                        <FontAwesomeIcon icon={faGithub} aria-hidden="true" /> 
+                        <a href={props.data.markdownRemark.frontmatter.source}>
+                            Source Code
+                        </a>
+                    </div>
+                    <img 
+                        src={props.data.markdownRemark.frontmatter.image.publicURL}
+                        alt={props.data.markdownRemark.frontmatter.image_description}
+                    />
+                </aside>
             </article>
         </Layout>
     )

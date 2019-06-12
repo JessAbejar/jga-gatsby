@@ -20,8 +20,8 @@ As the final project for Skillcrush's "Coding Responsive Websites" course, the t
 While this was an opportunity to practice my development skills in responsive design, especially with Flexbox, I wanted to take this opportunity to **rethink my own web development process**. I wanted a much more systematic process of developing websites. I wanted an organized way of writing code initially so that few revisions are made during the process; however, if changes were necessary then I wanted to ensure that there was a quicker and smoother process for implementing them. I knew I also wanted to include web accessibility, and so determined that functionality should be separate from styling.
 
 <figure>
-    <img src="unplugged-001.png" alt="The printed design comps of the same webpage across different-sized browsers." />
-    <figcaption>The printed design comps of the same webpage across different-sized browsers. Designs were created for three pages on three devices each.</figcaption>
+    <img src="unplugged-001.png" alt="" />
+    <figcaption>Image: The printed design comps of the same webpage across different-sized browsers. Designs were created for three pages on three devices each.</figcaption>
 </figure>
 
 I found it necessary to prepare and examine the design files thoroughly, identifying key patterns in how content was presented, laid out, and styled. This also helped determine the role of each element and identify any landmarks. This would be particularly useful in coding the site in HTML only, a format that could easily assess if the website met basic web accessibility standards (I aimed for at least WCAG 2.0 Level A compliance).
@@ -37,8 +37,8 @@ In the end, not only was I proud of the final product but I was extremely proud 
 After printing out the design comps, I identified the different parts of each page, dividing the website into components based on the content. I divided each page into a header, a main section, and a footer, with each of these sections broken down further into sub-sections. Each sub-section component was then broken down further into elements. I also took this opportunity to assign most of the components and elements a class or ID, to be used for CSS.
 
 <figure>
-    <img src="unplugged-002.png" alt="The printed design comps with accompanying sticky notes." />
-    <figcaption>The printed design comps with accompanying sticky notes identifying the different components, elements, and the HTML tags to be used across the three pages of the site.</figcaption>
+    <img src="unplugged-002.png" alt="" />
+    <figcaption>Image: The printed design comps with accompanying sticky notes identifying the different components, elements, and the HTML tags to be used across the three pages of the site.</figcaption>
 </figure>
 
 <aside>
@@ -56,8 +56,8 @@ For this project, the header was divided into a logo element and a navigation el
 After identifying each element, I started comparing the layouts of each page across the different device sizes, in this case - mobile, tablet, and desktop layouts. This would later help in determining how to write media queries for each element, and because of that, it confirmed which elements should be grouped together.
 
 <figure>
-    <img src="unplugged-004.png" alt="The printed design comps of the same webpage across different-sized browsers." />
-    <figcaption>The printed design comps of the same webpage across different-sized browsers. The green sticky notes on the left of the design identify content and HTML. The pink sticky notes on the right of the design determine layout and subsequent changes in layout across different-sized browsers.</figcaption>
+    <img src="unplugged-004.png" alt="" />
+    <figcaption>Image: The printed design comps of the same webpage across different-sized browsers. The green sticky notes on the left of the design identify content and HTML. The pink sticky notes on the right of the design determine layout and subsequent changes in layout across different-sized browsers.</figcaption>
 </figure>
 
 <aside>
@@ -77,15 +77,15 @@ The services component was one section that changed the most across browser size
 After planning each page’s content and layout by pen and paper, the pages were then coded. The HTML5 Boilerplate was used to provide a framework for the website files. HTML was implemented first, using semantic HTML to ensure readability and accessibility. Comments were also included to separate and easily identify elements and components.
 
 <figure>
-    <img src="unplugged-006.png" alt="Text editor with HTML code." />
-    <figcaption>Text editor with early-implemented HTML code that includes comments identifying each section of the page as well as comments for future sections, elements, or content to be added.</figcaption>
+    <img src="unplugged-006.png" alt="" />
+    <figcaption>Image: Text editor with early-implemented HTML code that includes comments identifying each section of the page as well as comments for future sections, elements, or content to be added.</figcaption>
 </figure>
 
 HTML was tested for errors using the Nu Html Checker. The site was also tested for accessibility using the ChromeVox and VoiceOver screenreaders as well as tested for keyboard accessibility manually. The website was viewed with HTML only to ensure that the content was still presented logically even without styling, allowing for users with limited or slow Internet to be able to access, navigate, and understand the content of the site.
 
 <figure>
-    <img src="unplugged-007.png" alt="Each page of the Unplugged Retreat website in the browser, HTML only without CSS styling." />
-    <figcaption>Each page of the Unplugged Retreat website in the browser, HTML only without CSS styling.</figcaption>
+    <img src="unplugged-007.png" alt="" />
+    <figcaption>Image: Each page of the Unplugged Retreat website in the browser, HTML only without CSS styling.</figcaption>
 </figure>
 
 <aside>
@@ -109,8 +109,8 @@ The CSS is then planned out, mobile-first. The major part of determining how to 
 The website was designed to have a responsive layout. The first part was determining which section components were flexible, meaning which had children whose width was fluid and whose layout and placement changed at certain breakpoints. The second step was to then determine the behavior of the child elements, for example, going from full-width (arranged in a single column) to half-width (arranged in two columns) or even one-third-width (arranged in three columns). Elements that exhibited similar behavior at certain breakpoints were given the same class name rather than simply assigning these properties and values to the element itself. Their behavior was observed going from mobile stylings first (acting as default styling), onto tablet styling, and finally desktop.
 
 <figure>
-    <img src="unplugged-008.png" alt="Post-it notes that identified patterns in layout." />
-    <figcaption>Post-it notes that identified patterns in layout behavior and breakpoints at which they changed. Elements were grouped by their mobile layout first.</figcaption>
+    <img src="unplugged-008.png" alt="" />
+    <figcaption>Image: Post-it notes that identified patterns in layout behavior and breakpoints at which they changed. Elements were grouped by their mobile layout first.</figcaption>
 </figure>
 
 <aside>
@@ -139,15 +139,15 @@ One of the challenges I faced was not considering margins and padding with the l
 Determining text stylings was also a tedious process that involved identifying each text element’s styling including font-family, font-size, line-heighting, font-weight, text-decoration, text-transform, and text-align. These properties were also identified across each media query breakpoint.
 
 <figure>
-    <img src="unplugged-009.png" alt="Post-its on printed design comps identifying CSS properties for each text element." />
-    <figcaption>Post-its on printed design comps identifying CSS properties for each text element.</figcaption>
+    <img src="unplugged-009.png" alt="" />
+    <figcaption>Image: Post-its on printed design comps identifying CSS properties for each text element.</figcaption>
 </figure>
 
 Patterns were then identified based on these properties. After grouping the elements and defining a root font-size at each breakpoint, the font-sizes of each group were converted into rem. Then any repeating sizes (based on rem) from one breakpoint to another were determined; this was to ensure that code did not have to repeat if it was not needed, for example if a style remained 1rem from mobile to tablet, then no tablet styles needed to be written.
 
 <figure>
-    <img src="unplugged-010.png" alt="Spreadsheets grouping, sorting, and identifying text elements with similar property patterns." />
-    <figcaption>Spreadsheets grouping, sorting, and identifying text elements with similar property patterns. Font-family, font-size, line-height, text-transform, and text-align were some of the properties and values determined.</figcaption>
+    <img src="unplugged-010.png" alt="" />
+    <figcaption>Image: Spreadsheets grouping, sorting, and identifying text elements with similar property patterns. Font-family, font-size, line-height, text-transform, and text-align were some of the properties and values determined.</figcaption>
 </figure>
 
 <aside>
@@ -175,3 +175,18 @@ Layout was coded first, starting mobile-first and then adding appropriate media 
 Text styles were then added, followed by individual stylings. As mentioned earlier, margins and paddings were later added as they were initially left out by mistake.
 
 ## QA
+The last part of the process was to do last minute checks on the website. These are some of the checks that were included (with links to the tools provided):
+- Checking content for grammar and spelling errors (One way to check the content is by turning on a screen reader such as VoiceOver, JAWS, or ChromeVox to read your content)
+- [HTML Validation](https://validator.w3.org/nu/)
+- [CSS Validation](https://jigsaw.w3.org/css-validator/)
+- Responsive design across devices : Chrome DevTools & [Matt Kersley's Responsive Design Tool](http://mattkersley.com/responsive/)
+- Screenreader accessibility : [VoiceOver](https://www.apple.com/voiceover/info/guide/_1121.html) & [ChromeVox](https://www.chromevox.com/)
+- Keyboard navigation (manually navigating a page with the keyboard only)
+- Accessibility : [Wave](https://wave.webaim.org/) (live sites only)
+- Accessibility : [AChecker](https://achecker.ca/checker/index.php) (live sites only)
+- Performance, Accessibiity, Best Practices, & SEO Audits: [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+
+Some accessibility issues, in particular, were related to design (such as low color contrast with the light green accent and lack of label on the form). Overall, I worked to make sure that the page was accessible, navigable, and easy to understand.
+
+## In Summary
+A plan to create a more systematic approach to design led to a speedier and efficient process. Design choices drove development, and understanding and identifying those design patterns created a smoother process for implementation and even troubleshooting. The process of breaking down design patterns but also identifying repetitive patterns and how they fit to the whole site helped in creating a page that is close to "pixel perfect." I imagine that my process for developing code from design comps would look similar in the future and that I'll be able to identify issues (such as forgotten margins and padding) earlier.
