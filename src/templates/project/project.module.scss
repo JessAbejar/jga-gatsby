@@ -135,6 +135,23 @@
             text-align: center;
         }
     }
+    div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @media #{$break-small} {
+            flex-direction: row;
+        }
+
+        figure {
+            flex-basis: 100%;
+
+            @media #{$break-small} {
+                flex-basis: 45%;
+            }
+        }
+    }
     aside {
         h3,
         h4,
@@ -153,6 +170,27 @@
             @media #{$break-large} {
                 font-size: 1.22rem;
                 line-height: 1.586rem;  
+            }
+        }
+        blockquote {
+            font-family: $font;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            color: $body;
+            font-weight: normal;
+            font-style: normal;
+            border: none;
+            margin: 1rem 1rem 1rem .5rem;
+            padding: .5rem 0 .5rem 1rem;
+            border-left: $border var(--tech);
+                
+            @media #{$break-small} {
+                font-size: 1.1rem;
+                line-height: 1.43rem;  
+            }
+            @media #{$break-large} {
+                font-size: 1.125rem;
+                line-height: 1.4625rem; 
             }
         }
         span {
