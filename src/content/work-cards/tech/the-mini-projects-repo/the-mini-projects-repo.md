@@ -33,10 +33,10 @@ I began the process by drafting a quick paper wireframe. I knew I wanted to crea
 
 <div>
     <figure>
-        <img src="mini-001.png" alt="Paper wireframe of the mobile version of The Mini Projects Repo." />
+        <img src="./mini-001.png" alt="Paper wireframe of the mobile version of The Mini Projects Repo." />
     </figure>
     <figure>
-        <img src="mini-002.png" alt="Paper wireframe of the desktop version of The Mini Projects Repo." />
+        <img src="./mini-002.png" alt="Paper wireframe of the desktop version of The Mini Projects Repo." />
     </figure>
 <div>
 
@@ -59,7 +59,7 @@ I wanted to create a menu that exhibited different behaviors depending on browse
 I was extremely excited to include a dark-mode button, which I worked on previously as another mini project [(dark-mode button repo)](https://github.com/jessabejar/dark-mode-practice/). I use CSS variables to identify the colors that change and toggle between classes for the body of the document. Although I have yet to learn how to manage state so that users can maintain their preferences, I think this is a great start.
 
 <figure>
-    <img src="mini-003.png" alt="Screenshot of the navigation menu with the cursor hovering over the dark-mode button.">
+    <img src="./mini-003.png" alt="Screenshot of the navigation menu with the cursor hovering over the dark-mode button.">
 </figure>
 
 </aside>
@@ -79,7 +79,7 @@ I choose to use CSS Grid for my projects section. The width of this section is w
 `<details>` and `<summary>` are two semantic HTML tags that comes with a native toggle feature, allowing content to be expanded or collapsed. `<details>` acts as the main wrapper for the contents with `<summary>` acting as the heading or displayed content and all other children elements of `<details>` acting as "hidden" elements that collapse or expand when the `<summary>` is clicked. The default stylings also come with a caret that points right when collapsed and down when expanded. Focus remains on the `<summary>` allowing the As this a native feature of this set of tags, all contents are accessible through screen readers; the closed and open starts are managed and announced.
 
 <figure>
-    <img src="mini-004.png" alt="Screenshot of a sample portfolio item with the details element expanded and the summary element focused.">
+    <img src="./mini-004.png" alt="Screenshot of a sample portfolio item with the details element expanded and the summary element focused.">
 </figure>
 
 </aside>
