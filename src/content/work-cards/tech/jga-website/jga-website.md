@@ -10,8 +10,8 @@ other_skills: |
     Content Creation, Notion, Paper Wireframes, CodePen, Visual Studio Code, Node.js, npm, JSON, Markdown, Chrome DevTools, GraphiQL, OneGraph Explorer, Git, GitHub, ChromeVox, VoiceOver, AChecker, Lighthouse
 description: |
     Designed and developed a personal website highlighting all my passions and interests as well as my past achievements.
-website: https://jessicagabejar.com
-source: https://github.com/JessAbejar/jga-gatsby
+website: https://jessicagabejar.com/
+source: https://github.com/JessAbejar/jga-gatsby/
 ---
 
 ## The Great Gatsby(.js) Portfolio Revamp
@@ -23,25 +23,6 @@ My portfolio was up for a revamp as my goals in tech changed, going from freelan
 So why 24 hours? Well, I wanted to go out with a bang for #100DaysOfCode. Also, the Puttytribe, an online community for multipotentialites, was hosting its biannual Puttython- a celebration of doing whatever you'd like for 24 hours! The two coincidentally landed on the same day so I thought it was perfect. I called it "The Great Gatbsy Puttython Hackathon!" Not to mention, I also went to the Gatsby workshop, and also [Andrew Mead's bootcamp tutorial](https://www.youtube.com/watch?v=8t0vNu2fCCM) just came out- so Gatsby and I were meant to be.
 
 Unfortunately, the results were tragic, but not as tragic as the Great Gatsby himself. I did not finish my portfolio site nor did I even finish the 4-hour course in a day. It ended up spanning a month. And while I did not reach my initial goal, I am incredibly proud of the final outcome.
-
-In a month's time, I was exposed to new technologies, which I had little to no experience with: 
-
-1. Gatsby.js
-2. React.js
-3. Sass/SCSS
-4. CSS Modules
-5. Markdown
-6. Typography.js
-7. CSS-in-JS
-8. GraphQL
-9. Node.js
-10. npm
-
-Plus some more I'm sure! I also learned a lot about how I learn, how I solve problems, and how I retain information.
-
-Learning Gatsby was by far an enjoyable experience, thanks to superb documentation, the 4-hour bootcamp, and a community that rallies around a great product. I was able to find solutions to problems pretty quickly, and I even began solving some own issues on my own. It was a great way to learn React without thinking too much about setting things up, and I never imagined I would enjoy GraphQL as much as I did.
-
-Overall, I not only learned a lot of things, but I ended up creating a site I am incredibly proud of. My original idea was to make a simple tech portfolio, but soon enough, I wasn't satisfied with just showing off my tech skills. I am incredibly proud of all the things I've done in all other aspects of my life and career, so I wanted to show them in a way I had yet achieved. I am incredibly proud of learning new things, creating a great site, and after looking back at all I've done, I'm proud of all I've done and look forward to my bright future.
 
 ## Content
 
@@ -74,3 +55,21 @@ Components
 ## Development
 
 ## QA & Testing
+
+## In Summary
+In a month's time, I was exposed to new technologies, which I had little to no experience with: 
+
+1. Gatsby.js
+2. React.js
+3. Sass/SCSS
+4. CSS Modules
+5. Markdown
+6. GraphQL
+7. Node.js
+8. npm
+
+Plus some more I'm sure! I also learned a lot about how I learn, how I solve problems, and how I retain information.
+
+Learning Gatsby was by far an enjoyable experience, thanks to superb documentation, the 4-hour bootcamp, and a team and community that rallies around a great product. I was able to find solutions to problems pretty quickly, and I even began solving some own issues on my own. It was a great way to learn React without thinking too much about setting things up, and I never imagined I would enjoy GraphQL as much as I did.
+
+Overall, I not only learned a lot of things, but I ended up creating a site I am incredibly proud of. My original idea was to make a simple tech portfolio, but soon enough, I wasn't satisfied with just showing off my tech skills. I am incredibly proud of all the things I've done in all other aspects of my life and career, so I wanted to show them in a way I had yet achieved. I am proud of learning new things, creating a great site, and after looking back at all I've done, I'm proud of all I've done and look forward to my bright future.

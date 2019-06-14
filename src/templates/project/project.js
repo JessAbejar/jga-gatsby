@@ -55,10 +55,12 @@ const Project = (props) => {
                         <strong>Other Skills &amp; Tools</strong>: {props.data.markdownRemark.frontmatter.other_skills}
                     </li>
                 </ul>
-                <img 
-                    src={props.data.markdownRemark.frontmatter.image.publicURL}
-                    alt={props.data.markdownRemark.frontmatter.image_description}
-                />
+                <figure>
+                    <img 
+                        src={props.data.markdownRemark.frontmatter.image.publicURL}
+                        alt={props.data.markdownRemark.frontmatter.image_description}
+                    />
+                </figure>
                 <section dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}} className={styles.projectContent}/>
                 <aside>
                     <h2 className={styles.pageTitle}>{props.data.markdownRemark.frontmatter.title}</h2>
@@ -72,10 +74,12 @@ const Project = (props) => {
                             Source Code
                         </a>
                     </div>
-                    <img 
-                        src={props.data.markdownRemark.frontmatter.image.publicURL}
-                        alt={props.data.markdownRemark.frontmatter.image_description}
-                    />
+                    <figure>
+                        <img 
+                            src={props.data.markdownRemark.frontmatter.image.publicURL}
+                            alt={props.data.markdownRemark.frontmatter.image_description}
+                        />
+                    </figure>
                 </aside>
             </article>
         </Layout>
