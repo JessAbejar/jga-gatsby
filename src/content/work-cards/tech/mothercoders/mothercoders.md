@@ -23,10 +23,10 @@ Three months later, I couldn’t have been more in love with my job. Not only di
 
 <div>
     <figure>
-        <img src="mothercoders-sat.png" alt="MotherCoders NYC Spring 2019 cohort - Saturday class picture from their field trip." />
+        <img src="./mothercoders-sat.png" alt="MotherCoders NYC Spring 2019 cohort - Saturday class picture from their field trip." />
     </figure>
     <figure>
-        <img src="mothercoders-tues.png" alt="MotherCoders NYC Spring 2019 cohort - Tues/Thurs class picture from their field trip." />
+        <img src="./mothercoders-tues.png" alt="MotherCoders NYC Spring 2019 cohort - Tues/Thurs class picture from their field trip." />
     </figure>
 <div>
 
@@ -54,10 +54,10 @@ Over the course of the program, they learned from experts in design thinking, UX
 
 <div class = "gallery">
     <figure>
-        <img src="mothercoders-001.png" alt="MotherCoders NYC Spring 2019 cohort - Saturday class picture." />
+        <img src="./mothercoders-001.png" alt="MotherCoders NYC Spring 2019 cohort - Saturday class picture." />
     </figure>
     <figure>
-        <img src="mothercoders-002.png" alt="MotherCoders NYC Spring 2019 cohort - Tues/Thurs class picture." />
+        <img src="./mothercoders-002.png" alt="MotherCoders NYC Spring 2019 cohort - Tues/Thurs class picture." />
     </figure>
 <div>
 
@@ -90,10 +90,10 @@ I assisted them individually with projects and showed them how to debug, trouble
 
 <div>
     <figure>
-        <img src="mothercoders-003.png" alt="Jessica Abejar pointing at a large projector screen explaining a JavaScript function." />
+        <img src="./mothercoders-003.png" alt="Jessica Abejar pointing at a large projector screen explaining a JavaScript function." />
     </figure>
     <figure>
-        <img src="mothercoders-004.png" alt="Jessica Abejar sitting near a large TV projection of HTML code in a text editor." />
+        <img src="./mothercoders-004.png" alt="Jessica Abejar sitting near a large TV projection of HTML code in a text editor." />
     </figure>
 <div>
 
@@ -114,19 +114,19 @@ I assisted them individually with projects and showed them how to debug, trouble
 One of the biggest things that I did for my students was provide two weekly emails. The first was an email that introduced the class of the week: introducing any guest speakers or coaches; reminding them to complete their homework; sharing information from our childcare providers; lunch for the week; and any travel advisories.
 
 <figure>
-    <img src="mothercoders-005.png" alt='Screenshot of a weekly email that features sections such as "HW assignments", "Things to Bring to Class", and "Childcare".' />
+    <img src="./mothercoders-005.png" alt='Screenshot of a weekly email that features sections such as "HW assignments", "Things to Bring to Class", and "Childcare".' />
 </figure>
 
 The second was a midweek email with any important class announcements and dates but also a weekly resources roundup. Any resources mentioned by guests, shared in class, shared in Slack, or that I found useful for the week's lessons were included in the email. Students really looked forward to these weekly emails and was a highlight of their week!
 
 <figure>
-    <img src="mothercoders-006.png" alt='Screenshot of a midweek email that features a Resources Roundup. In this email, there are sections on "HTML & CSS Resources", "JavaScript Resources", and "Community Resources".' />
+    <img src="./mothercoders-006.png" alt='Screenshot of a midweek email that features a Resources Roundup. In this email, there are sections on "HTML & CSS Resources", "JavaScript Resources", and "Community Resources".' />
 </figure>
 
 Another feature of my emails were the tone it set. I often included fun GIFs to help bring a smile on students' faces, and I included a segment called "**take a < br >**", which encouraged students to take a moment to pause and step away from their learning and projects every once in a while.
 
 <figure>
-    <img src="mothercoders-007.png" alt='Screenshot of the "Take a br" section of every email.' />
+    <img src="./mothercoders-007.png" alt='Screenshot of the "Take a br" section of every email.' />
 </figure>
 
 I was also available for homework and project help. In particular, for Demo Day, we chose four students to present their projects, and in preparation, I offered to help them with their talking points. I listened to their presentation and offered feedback to make them more impactful and personal. For example, one of our students Shiela created a tool that she used in her classroom so I encouraged her to mention that in her presentation.

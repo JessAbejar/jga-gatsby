@@ -33,7 +33,7 @@ In this case, moving away from wanting to be a freelance web designer and develo
 I gathered my content using Notion, an organization and note-taking platform that lets users create and organize in any way that they prefer. In this instance, I used subpages to create content, drafting each of the website's pages as documents. Other than content gathering and management, this would be also helpful in ensuring content was accessible. I made sure that each document followed a logical heading and content structure and that information presented was easy-to-read and not too lengthy. Notion also allows for a bit of layout and color, so I was able to test color accents and two-column layouts in the process while also using a table of contents to check that the structure was still in place.
 
 <figure>
-    <img src="jga-001.png" alt="">
+    <img src="./jga-001.png" alt="">
     <figcaption>Image: The content subpage for "Wellness" with a Table of Contents. Each page displays all planned content to be shown on the actual site.</figcaption>
 </figure>
 
@@ -44,12 +44,12 @@ The design phase involved a few steps but one important step was to establish a 
 I began with creating paper and digital wireframes. I wanted a minimalist layout that focused on the content. I knew I wanted my website to be work across all browser sizes, so decided my site should be designed mobile-first. With my paper wireframes I was also thinking proactively, thinking of web accessibility and reusable components.
 
 <figure>
-    <img src="jga-002.png" alt="">
+    <img src="./jga-002.png" alt="">
     <figcaption>Image: Paper wireframe for the front page, featuring sketches of its mobile and desktop designs, as well as a few sketches of possible reusable components.</figcaption>
 </figure>
 
 <figure>
-    <img src="jga-003.png" alt="">
+    <img src="./jga-003.png" alt="">
     <figcaption>Image: Paper wireframe for the pagea, featuring sketches of its mobile and desktop designs.</figcaption>
 </figure>
 
