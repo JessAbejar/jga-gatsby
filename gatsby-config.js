@@ -14,37 +14,6 @@ module.exports = {
     twitterUsername: `@_jessicode`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Cookie']
-        }
-      }
-    },
-    `gatsby-transformer-json`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          `gatsby-remark-responsive-iframe`,
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 720,
-              linkImagesToOriginal: false,
-            },
-          },
-          `gatsby-remark-copy-linked-files`,
-        ],
-      },
-    },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-catch-links`,
-    `gatsby-plugin-twitter`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -65,6 +34,37 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 720,
+              linkImagesToOriginal: false,
+            },
+          },
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-responsive-iframe`,
+        ],
+      },
+    },
+    `gatsby-transformer-json`,
+    `gatsby-plugin-catch-links`,
+    `gatsby-plugin-twitter`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Cookie']
+        }
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
