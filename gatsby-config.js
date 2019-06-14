@@ -43,6 +43,7 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-catch-links`,
     `gatsby-plugin-twitter`,
     {
       resolve: `gatsby-source-filesystem`,
