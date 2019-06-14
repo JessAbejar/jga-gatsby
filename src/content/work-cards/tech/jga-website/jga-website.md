@@ -7,7 +7,7 @@ image_description: "Screenshot of JessicaGAbejar.com"
 main_skills: |
     Adobe XD, Gatsby.js, React.js, GraphQL, Sass/SCSS
 other_skills: |
-    Content Creation, Notion, Paper Wireframes, CodePen, Visual Studio Code, Node.js, npm, JSON, Markdown, , CSS Modules, Chrome DevTools, GraphiQL, OneGraph Explorer, Git, GitHub, ChromeVox, VoiceOver, WAVE Accessibility Checker, AChecker, Lighthouse
+    Content Creation, Notion, Paper Wireframes, CodePen, Visual Studio Code, Node.js, npm, JSON, Markdown, CSS Modules, Chrome DevTools, GraphiQL, OneGraph Explorer, Git, GitHub, Netlify, DreamHost, ChromeVox, VoiceOver, WAVE Accessibility Checker, AChecker, Lighthouse
 description: |
     Designed and developed a personal website highlighting all my passions and interests as well as my past achievements.
 website: https://jessicagabejar.com/
@@ -57,21 +57,77 @@ Before going into the digital wireframe, I wanted to define patterns in my conte
 
 ### Document Structure
 
+<mark><em>Subsection coming soon, thanks for your patience!</em></mark>
+
 ### Colors
 
-[EightShapes Contrast Grid](http://contrast-grid.eightshapes.com/)
+<mark><em>Subsection coming soon, thanks for your patience!</em></mark>
 
 ### Text Stylings
 
+<mark><em>Subsection coming soon, thanks for your patience!</em></mark>
+
+### Components Pre-Development
+
+<mark><em>Subsection coming soon, thanks for your patience!</em></mark>
+
 ## Development
 
-### Components
+<mark><em>Section coming soon, thanks for your patience!</em></mark>
 
-### Installation & Plugins
+### Installation & First Components
+
+<aside>
+
+#### Git & GitHub
+
+</aside>
+
+### Styling with Sass & CSS Modules
+
+<aside>
+
+#### Learning How to Use @import and SCSS Partials
+
+</aside>
+
+### Plugins
+
+<aside>
+
+#### SEO & Metadata
+
+</aside>
+
+<aside>
+
+#### Manifest & Progressive Web Applications
+
+</aside>
 
 ### Content Management, Data, & GraphQL
 
-## QA & Testing
+<aside>
+
+#### Querying Data from Multiple Sources
+
+</aside>
+
+<aside>
+
+#### Pragmatically Rendering Pages
+
+</aside>
+
+## Deploying
+
+<mark><em>Section coming soon, thanks for your patience!</em></mark>
+
+### Deploying with Netlify and Managing Domain Names
+
+## QA
+
+<mark><em>Section coming soon, thanks for your patience!</em></mark>
 
 ## In Summary
 In a month's time, I was exposed to new technologies, which I had little to no experience with: 

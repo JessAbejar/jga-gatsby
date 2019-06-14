@@ -81,6 +81,10 @@ const TechPage = () => {
                 aside={data.aside.aside}
                 color="var(--tech)"
             />
+            <TechCards 
+                title="Portfolio"
+                items={data.cards.edges}
+            />
             <WorkSpotlight
                 color="var(--tech)"
                 spotlight={data.spotlight}
@@ -89,10 +93,6 @@ const TechPage = () => {
                     Read more about my experience with MotherCoders
                 </Link>
             </WorkSpotlight>
-            <TechCards 
-                title="Portfolio"
-                items={data.cards.edges}
-            />
             <ConnectSection
                 links={connectIcons.tech.links} 
                 color="var(--tech)"

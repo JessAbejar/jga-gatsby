@@ -7,7 +7,7 @@ image_description: "Screenshot of Unplugged Retreat Project"
 main_skills: |
     Adobe Photoshop, HTML5, CSS3 (Responsive Web Design, Media Queries, Flexbox)
 other_skills: |
-    Visual Studio Code, HTML5 Boilerplate, Google Fonts, Font Awesome, Chrome DevTools, Git, GitHub, CanIUse.com, W3C HTML & CSS Validation, ChromeVox, VoiceOver, WAVE Accessibility Checker, AChecker, Lighthouse
+    Visual Studio Code, HTML5 Boilerplate, Google Fonts, Font Awesome, Chrome DevTools, Git, GitHub, GitHub Pages, CanIUse.com, W3C HTML & CSS Validation, ChromeVox, VoiceOver, WAVE Accessibility Checker, AChecker, Lighthouse
 description: |
     Developed a website for the Unplugged Retreat based on a Photoshop design comp (a Skillcrush project).
 website: https://jessabejar.github.io/unplugged-retreat/

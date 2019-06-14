@@ -7,7 +7,7 @@ image_description: "Screenshot of the Jubilee Austen website"
 main_skills: |
     Adobe Photoshop, HTML5, CSS3 (Responsive Web Design, Media Queries, Flexbox)
 other_skills: |
-    Visual Studio Code, Google Fonts, Font Awesome, normalize.css, Chrome DevTools, Git, GitHub, W3C HTML & CSS Validation, ChromeVox, VoiceOver, WAVE Accessibility Checker, AChecker, Lighthouse
+    Visual Studio Code, Google Fonts, Font Awesome, normalize.css, Chrome DevTools, Git, GitHub, GitHub Pages, W3C HTML & CSS Validation, ChromeVox, VoiceOver, WAVE Accessibility Checker, AChecker, Lighthouse
 description: |
     Developed a website for budding developer Jubilee Austen based on a Photoshop design comp (a Skillcrush project).
 website: https://jessabejar.github.io/jubilee-austen/

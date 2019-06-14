@@ -7,7 +7,7 @@ image_description: "Screenshot of The Mini Projects Repo"
 main_skills: |
     HTML5, CSS3 (Responsive Web Design, Media Queries, Flexbox, Grid, Variables), JavaScript
 other_skills: |
-    Content Creation, CodePen, SVG Background, Visual Studio Code, normalize.css, Google Fonts, Font Awesome, Git, GitHub, Chrome DevTools, W3C HTML & CSS Validation, WAVE Accessibility Checker, AChecker, Lighthouse
+    Content Creation, CodePen, SVG Background, Visual Studio Code, normalize.css, Google Fonts, Font Awesome, Git, GitHub, GitHub Pages, Chrome DevTools, W3C HTML & CSS Validation, WAVE Accessibility Checker, AChecker, Lighthouse
 description: |
     Designed and developed a page for all my mini projects.
 website: https://jessabejar.github.io/the-mini-projects-repo/
