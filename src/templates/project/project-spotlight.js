@@ -18,7 +18,6 @@ export const query = graphql`
                 }
                 image_description
             }
-            tableOfContents(maxDepth: 3)
             html
         }
     }
@@ -38,7 +37,7 @@ const ProjectSpotlight = (props) => {
                     src={props.data.markdownRemark.frontmatter.image.publicURL}
                     alt={props.data.markdownRemark.frontmatter.image_description}
                 />
-                <div dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}} className={styles.spotlightContent}/>
+                <section dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}} className={styles.spotlightContent}/>
             </article>
         </Layout>
     )

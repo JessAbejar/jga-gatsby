@@ -10,25 +10,25 @@ export const connectIcons = {
             {
                 url: "https://themovingprayer.com",
                 label: "The Moving Prayer Website",
-                icon: <FontAwesomeIcon icon={faLink} />,
+                icon: <FontAwesomeIcon icon={faLink} aria-hidden="true" />,
                 text: "themovingprayer.com",
             }, 
             {
                 url: "https://youtube.com/themovingprayer",
                 label: "The Moving Prayer YouTube Channel",
-                icon: <FontAwesomeIcon icon={faYoutube} />,
+                icon: <FontAwesomeIcon icon={faYoutube} aria-hidden="true" />,
                 text: "themovingprayer",
             },
             {
                 url: "https://instagram.com/themovingprayer",
                 label: "The Moving Prayer Instagram Page",
-                icon: <FontAwesomeIcon icon={faInstagram} />,
+                icon: <FontAwesomeIcon icon={faInstagram} aria-hidden="true" />,
                 text: "themovingprayer",
             }, 
             {
                 url: "https://facebook.com/themovingprayer",
                 label: "The Moving Prayer Facebook Page",
-                icon: <FontAwesomeIcon icon={faFacebook} />,
+                icon: <FontAwesomeIcon icon={faFacebook} aria-hidden="true" />,
                 text: "themovingprayer",
             },
         ]
@@ -38,7 +38,7 @@ export const connectIcons = {
             {
                 url: "https://instagram.com/jessdoeswellness",
                 label: "Instagram",
-                icon: <FontAwesomeIcon icon={faInstagram} />,
+                icon: <FontAwesomeIcon icon={faInstagram} aria-hidden="true" />,
                 text: "jessdoeswellness",
             }, 
         ]
@@ -48,25 +48,25 @@ export const connectIcons = {
             {
                 url: "https://github.com/jessabejar",
                 label: "GitHub",
-                icon: <FontAwesomeIcon icon={faGithub} />,
+                icon: <FontAwesomeIcon icon={faGithub} aria-hidden="true" />,
                 text: "jessabejar",
             }, 
             {
                 url: "https://codepen.io/jessabejar",
                 label: "CodePen",
-                icon: <FontAwesomeIcon icon={faCodepen} />,
+                icon: <FontAwesomeIcon icon={faCodepen} aria-hidden="true" />,
                 text: "jessabejar",
             },
             {
                 url: "https://twitter.com/_jessicode",
                 label: "Twitter",
-                icon: <FontAwesomeIcon icon={faTwitter} />,
+                icon: <FontAwesomeIcon icon={faTwitter} aria-hidden="true" />,
                 text: "_jessicode",
             }, 
             {
                 url: "https://dev.to/jessabejar",
                 label: "The DEV Community",
-                icon: <FontAwesomeIcon icon={faDev} />,
+                icon: <FontAwesomeIcon icon={faDev} aria-hidden="true" />,
                 text: "jessabejar",
             },
         ]
@@ -76,7 +76,7 @@ export const connectIcons = {
             {
                 url: "https://www.linkedin.com/in/jessicaabejar/",
                 label: "LinkedIn",
-                icon: <FontAwesomeIcon icon={faLinkedin} />,
+                icon: <FontAwesomeIcon icon={faLinkedin} aria-hidden="true" />,
                 text: "Jessica Abejar",
             },
         ]

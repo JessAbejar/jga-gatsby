@@ -22,7 +22,7 @@ const AboutPage = ({ data }) => {
                 <figure className={styles.illustration}>
                     <Img
                         fluid={data.file.childImageSharp.fluid}
-                        alt="Illustration of Jessica G. Abejar."
+                        alt="Illustration of Jessica G. Abejar by Julianne Abejar."
                     />
                 </figure>
                 <p>Being <strong>creative but also analytical</strong> led me to graduating at the top of my business class, dancing across the seas, 

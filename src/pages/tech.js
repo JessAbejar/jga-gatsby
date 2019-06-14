@@ -81,18 +81,18 @@ const TechPage = () => {
                 aside={data.aside.aside}
                 color="var(--tech)"
             />
-            <WorkSpotlight
-                color="var(--tech)"
-                spotlight={data.spotlight}
-            >
-                <Link to="/tech/mothercoders">
-                    Read more about my experience with MotherCoders
-                </Link>
-            </WorkSpotlight>
             <TechCards 
                 title="Portfolio"
                 items={data.cards.edges}
             />
+            <WorkSpotlight
+                color="var(--tech)"
+                spotlight={data.spotlight}
+            >
+                <Link to="/tech/mothercoders" style={{ color: "var(--tech)" }}>
+                    Read more about my experience with MotherCoders
+                </Link>
+            </WorkSpotlight>
             <ConnectSection
                 links={connectIcons.tech.links} 
                 color="var(--tech)"

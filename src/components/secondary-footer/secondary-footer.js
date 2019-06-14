@@ -12,7 +12,7 @@ const SecondaryFooter = () => {
             <div className={styles.backToTop}>
                 <a href = "#top">
                     Back to Top &nbsp;
-                    <FontAwesomeIcon icon={faChevronCircleUp} />
+                    <FontAwesomeIcon icon={faChevronCircleUp} aria-hidden="true"/>
                 </a>
             </div>
             <nav className={styles.sitemap}>

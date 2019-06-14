@@ -9,6 +9,8 @@ module.exports = {
     title: `Jessica G. Abejar`,
     description: `Jessica G. Abejar is a multipotentialite delving into dance, wellness, events, writing, and now integrating tech.`,
     author: `Jessica G. Abejar`,
+    url: `https://jessicagabejar.com`,
+    image: `/image.png`,
     twitterUsername: `@_jessicode`,
   },
   plugins: [
@@ -32,6 +34,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 720,
+              linkImagesToOriginal: false,
             },
           },
           `gatsby-remark-copy-linked-files`,
@@ -40,6 +43,7 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-catch-links`,
     `gatsby-plugin-twitter`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -69,9 +73,9 @@ module.exports = {
         short_name: `JGA`,
         start_url: `/`,
         background_color: `#373737`,
-        theme_color: `#525252`,
+        theme_color: `#f0b3c9`,
         display: `fullscreen`,
-        icon: `src/images/icon.png`,
+        icon: `src/images/favicon.png`,
       },
     },
     `gatsby-plugin-offline`,
