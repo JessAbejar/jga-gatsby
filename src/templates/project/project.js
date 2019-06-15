@@ -5,10 +5,6 @@ import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo/seo"
 
 import styles from "./project.module.scss"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faLink } from "@fortawesome/free-solid-svg-icons"
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
-
 
 export const query = graphql`
     query($slug: String!) {
@@ -37,14 +33,7 @@ const Project = (props) => {
             <article>
                 <h1 className={styles.pageTitle}>{props.data.markdownRemark.frontmatter.title}</h1>
                 <div className={styles.linkIcons}>
-                    <FontAwesomeIcon icon={faLink} aria-hidden="true" /> 
-                    <a href={props.data.markdownRemark.frontmatter.website}>
-                        Live Website
-                    </a>
-                    <FontAwesomeIcon icon={faGithub} aria-hidden="true" /> 
-                    <a href={props.data.markdownRemark.frontmatter.source}>
-                        Source Code
-                    </a>
+                    <a href={props.data.markdownRemark.frontmatter.website}>Live Website</a> • <a href={props.data.markdownRemark.frontmatter.source}>Source Code</a>
                 </div>
                 <p>{props.data.markdownRemark.frontmatter.description}</p>
                 <ul className={styles.skillsList}>
@@ -65,14 +54,7 @@ const Project = (props) => {
                 <aside>
                     <h2 className={styles.pageTitle}>{props.data.markdownRemark.frontmatter.title}</h2>
                     <div className={styles.linkIcons}>
-                        <FontAwesomeIcon icon={faLink} aria-hidden="true" /> 
-                        <a href={props.data.markdownRemark.frontmatter.website}>
-                            Live Website
-                        </a>
-                        <FontAwesomeIcon icon={faGithub} aria-hidden="true" /> 
-                        <a href={props.data.markdownRemark.frontmatter.source}>
-                            Source Code
-                        </a>
+                    <a href={props.data.markdownRemark.frontmatter.website}>Live Website</a> • <a href={props.data.markdownRemark.frontmatter.source}>Source Code</a>
                     </div>
                     <figure>
                         <img 
