@@ -21,7 +21,7 @@
         color: var(--tech);
         border-bottom: $link-border var(--tech);
         font-weight: bold;
-        margin: 0 1rem 0 .5rem;
+        margin: 0;
 
         &:hover {
             border-bottom: $link-border-hover var(--tech);

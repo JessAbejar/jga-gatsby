@@ -31,16 +31,16 @@ const TechPage = () => {
             }
             spotlight: markdownRemark (frontmatter : { type : {eq: "tech-spotlight"}}) {
                 frontmatter {
-                  title
-                  image {
-                    publicURL
-                  }
-                  logo {
-                      publicURL
-                  }
-                  image_description
-                  role 
-                  description
+                    title
+                    image {
+                        publicURL
+                    }
+                    logo {
+                        publicURL
+                    }
+                    image_description
+                    role 
+                    description
                 }
             }
             cards: allMarkdownRemark ( 
@@ -52,7 +52,11 @@ const TechPage = () => {
                         frontmatter {
                             title
                             image {
-                                publicURL
+                                childImageSharp {
+                                    fluid(maxWidth: 400) {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
                             }
                             image_description
                             main_skills
