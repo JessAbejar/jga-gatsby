@@ -2,7 +2,7 @@
 title: Flores de Mayo and Santacruzan - Event Planner (2017, 2018)
 type: events-card
 content_order: 1
-image: "./image.png"
+image: "./image.jpg"
 image_description: |
     "Outdoor procession also known as the Santacruzan. Photo by Jomar Domanlig."
 description: |

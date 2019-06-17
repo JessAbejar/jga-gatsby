@@ -1,7 +1,7 @@
 ---
 title: MotherCoders NYC
 type: tech-spotlight
-image: "./image.png"
+image: "./image.jpg"
 image_description: "Jessica Abejar with MotherCoders NYC Spring 2019 cohort."
 logo: "./logo.png"
 role: Student Success Coordinator
@@ -23,10 +23,10 @@ Three months later, I couldn’t have been more in love with my job. Not only di
 
 <div>
     <figure>
-        <img src="./mothercoders-sat.png" alt="MotherCoders NYC Spring 2019 cohort - Saturday class picture from their field trip." />
+        <img src="./mothercoders-sat.jpg" alt="MotherCoders NYC Spring 2019 cohort - Saturday class picture from their field trip." />
     </figure>
     <figure>
-        <img src="./mothercoders-tues.png" alt="MotherCoders NYC Spring 2019 cohort - Tues/Thurs class picture from their field trip." />
+        <img src="./mothercoders-tues.jpg" alt="MotherCoders NYC Spring 2019 cohort - Tues/Thurs class picture from their field trip." />
     </figure>
 <div>
 
@@ -54,10 +54,10 @@ Over the course of the program, they learned from experts in design thinking, UX
 
 <div class = "gallery">
     <figure>
-        <img src="./mothercoders-001.png" alt="MotherCoders NYC Spring 2019 cohort - Saturday class picture." />
+        <img src="./mothercoders-001.jpg" alt="MotherCoders NYC Spring 2019 cohort - Saturday class picture." />
     </figure>
     <figure>
-        <img src="./mothercoders-002.png" alt="MotherCoders NYC Spring 2019 cohort - Tues/Thurs class picture." />
+        <img src="./mothercoders-002.jpg" alt="MotherCoders NYC Spring 2019 cohort - Tues/Thurs class picture." />
     </figure>
 <div>
 
@@ -90,10 +90,10 @@ I assisted them individually with projects and showed them how to debug, trouble
 
 <div>
     <figure>
-        <img src="./mothercoders-003.png" alt="Jessica Abejar pointing at a large projector screen explaining a JavaScript function." />
+        <img src="./mothercoders-003.jpg" alt="Jessica Abejar pointing at a large projector screen explaining a JavaScript function." />
     </figure>
     <figure>
-        <img src="./mothercoders-004.png" alt="Jessica Abejar sitting near a large TV projection of HTML code in a text editor." />
+        <img src="./mothercoders-004.jpg" alt="Jessica Abejar sitting near a large TV projection of HTML code in a text editor." />
     </figure>
 <div>
 

@@ -2,7 +2,7 @@
 title: The Mini Projects Repo
 type: tech-project
 content_order: 3
-image: "./image.png"
+image: "./image.jpg"
 image_description: "Screenshot of The Mini Projects Repo"
 main_skills: |
     HTML5, CSS3 (Responsive Web Design, Media Queries, Flexbox, Grid, Variables), JavaScript
@@ -33,10 +33,10 @@ I began the process by drafting a quick paper wireframe. I knew I wanted to crea
 
 <div>
     <figure>
-        <img src="./mini-001.png" alt="Paper wireframe of the mobile version of The Mini Projects Repo." />
+        <img src="./mini-001.jpg" alt="Paper wireframe of the mobile version of The Mini Projects Repo." />
     </figure>
     <figure>
-        <img src="./mini-002.png" alt="Paper wireframe of the desktop version of The Mini Projects Repo." />
+        <img src="./mini-002.jpg" alt="Paper wireframe of the desktop version of The Mini Projects Repo." />
     </figure>
 <div>
 

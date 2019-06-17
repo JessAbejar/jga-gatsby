@@ -2,7 +2,7 @@
 title: Jubilee Austen
 type: tech-project
 content_order: 4
-image: "./image.png"
+image: "./image.jpg"
 image_description: "Screenshot of the Jubilee Austen website"
 main_skills: |
     Adobe Photoshop, HTML5, CSS3 (Responsive Web Design, Media Queries, Flexbox)

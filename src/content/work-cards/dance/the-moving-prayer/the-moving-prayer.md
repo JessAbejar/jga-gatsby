@@ -1,7 +1,7 @@
 ---
 title: The Moving Prayer
 type: dance-spotlight
-image: "./image.png"
+image: "./image.jpg"
 image_description: "Jessica Abejar of The Moving Prayer dancing. Photo by David Lua."
 logo: "./logo.png"
 role: Founder, Director, Dancer, Choreographer, Instructor
