@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import Img from "gatsby-image"
 
 import styles from "./tech-cards.module.scss"
 
@@ -8,12 +8,10 @@ const TechCardItems = ({ items }) => {
     return(
         items.map((item,index) => (
             <div key={index} className={styles.workItem}>
-                <figure className={styles.workImg}>
-                    <img
-                        src={item.node.frontmatter.image.publicURL}
-                        alt={item.node.frontmatter.image_description}
-                    />
-                </figure>
+                <Img 
+                    fluid={item.node.frontmatter.image.childImageSharp.fluid}
+                    alt={item.node.frontmatter.image_description}
+                />
                 <h3 className={styles.itemTitle}>{item.node.frontmatter.title}</h3>
                 <p className={styles.skillsDescription}>{item.node.frontmatter.main_skills}</p>
                 <p>{item.node.frontmatter.description}</p>
