@@ -123,7 +123,7 @@ In addition, each page had a header with navigation and footer.
 
 <aside>
 
-#### Pragmatically Rendering Pages
+#### Dynamically Rendering Pages
 
 </aside>
 
