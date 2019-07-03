@@ -1,5 +1,4 @@
 # JessicaGAbejar.com
-
 - [Project Summary](#project-summary)
 - [Updates Summary](#updates-summary)
 - [Learning Resources](#learning-resources)
@@ -11,6 +10,8 @@
   - [Styles](#styles)
 
 ## Project Summary
+
+![Screenshot of JessicaGAbejar.com.](https://jessicagabejar.com/static/9db9da311bd185284080d97e9a5ad5b0/6fbf7/image.png)
 
 JessicaGAbejar.com is my personal website, built using Gatsby.js with React.js, GraphQL, and Sass/SCSS. It highlights all my major interests across various disciplines including dance, wellness, events, writing, and tech.
 
