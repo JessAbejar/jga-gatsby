@@ -1,102 +1,178 @@
-# 👋 Hello, welcome to the source code for my personal website.
-This is the source code for my personal website, jessicagabejar.com. I used Gatsby's hello-world starter, which is the most basic of Gatsby starters, and installed plugins based off of some great starters including the [gatsby-starter default](https://github.com/gatsbyjs/gatsby-starter-default), [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog), and [gatsby-advanced-starter](https://github.com/Vagr9K/gatsby-advanced-starter).
+# JessicaGAbejar.com
 
-I owe a lot of getting this site up and running thanks to the [official tutorial](https://www.gatsbyjs.org/tutorial/) and [docs](https://www.gatsbyjs.org/docs/) plus [plugin docs](https://www.gatsbyjs.org/plugins/). Also a big thank you to [Andrew Mead's The Great Gatsby Bootcamp Tutorial](https://youtu.be/8t0vNu2fCCM), which got me started on learning Gatsby.
+- [Project Summary](#project-summary)
+- [Updates Summary](#updates-summary)
+- [Learning Resources](#learning-resources)
+- [Using Gatsby](#using-gatsby)
+- [File and Directory Organization](#file-and-directory-organization)
+- [Site Features](#site-features)
+  - [Components and Content](#components-and-content)
+  - [Page Templates](#templates)
+  - [Styles](#styles)
 
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's hello-world starter
-</h1>
+## Project Summary
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+JessicaGAbejar.com is my personal website, built using Gatsby.js with React.js, GraphQL, and Sass/SCSS. It highlights all my major interests across various disciplines including dance, wellness, events, writing, and tech.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+Features include fast site performance, reusable components and design elements, optimized images, content from multiple data sources, SEO, and offline support.
 
-## 🚀 Quick start
+To see how I built this website in detail from design to development and takeaways, take a look at the [process write-up for JessicaGAbejar.com](https://jessicagabejar.com/tech/jga-website).
 
-1.  **Create a Gatsby site.**
+This project is hosted on Netlify.
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+## Updates Summary
+This is a summary of major site updates:
 
-    ```sh
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
-    ```
+- 6/17/2019: Tech write-ups all added. Images fixed by uploading directly to Netlify instead of using the build command.
+- 6/6/2019: First deployment. Site includes all main pages (home, dance, wellness, events, writing, tech, and about) and page templates for tech spotlight & project created.
 
-1.  **Start developing.**
+## Learning Resources
+I used this project as an opportunity to learn Gatsby, React, and GraphQL. I used the following tutorials and documentation to help build this site:
 
-    Navigate into your new site’s directory and start it up.
+- [Gatsby official tutorial](https://www.gatsbyjs.org/tutorial/)
+- [Gatsby official docs](https://www.gatsbyjs.org/docs/)
+- [Gatsby Plugins official docs](https://www.gatsbyjs.org/plugins/)
+- [Andrew Mead's The Great Gatsby Bootcamp Tutorial](https://youtu.be/8t0vNu2fCCM)
 
-    ```sh
-    cd my-hello-world-starter/
-    gatsby develop
-    ```
+## Using Gatsby
+- [Boilerplate](#boilerplate)
+- [Dependencies and Plugins](#dependencies-and-plugins)
 
-1.  **Open the source code and start editing!**
+### Boilerplate
+This site was created using Gatsby.js's [gatsby-starter-hello-world](https://github.com/gatsbyjs/gatsby-starter-hello-world), which is the most basic of Gatsby boilerplates or starters. I also used the following starters as a reference in constructing pages and installing dependencies and plugins:
 
-    Your site is now running at `http://localhost:8000`!
+- [gatsby-starter-default](https://github.com/gatsbyjs/gatsby-starter-default)
+- [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog)
+- [gatsby-advanced-starter](https://github.com/Vagr9K/gatsby-advanced-starter)
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+### Dependencies and Plugins
+The following is a list of dependencies and plugins for this site. For more info on Gatsby plugins, check out the [Gatsby Plugins official docs](https://www.gatsbyjs.org/plugins/).
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+- [gatsby](https://www.npmjs.com/package/gatsby)
+- [react](https://npm.im/react)
+- [react-dom](https://npm.im/react-dom)
+- [prettier](https://npm.im/prettier)
+- [gatsby-plugin-sass](https://www.gatsbyjs.org/packages/gatsby-plugin-sass/)
+- [react-fontawesome](https://www.npmjs.com/package/react-fontawesome)
+- [gatsby-plugin-manifest](https://www.gatsbyjs.org/packages/gatsby-plugin-manifest)
+- [gatsby-plugin-offline](https://www.gatsbyjs.org/packages/gatsby-plugin-offline)
+- [gatsby-plugin-react-helmet](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet)
+- [react-helmet](https://npm.im/react-helmet)
+- [gatsby-image](https://www.gatsbyjs.org/packages/gatsby-image)
+- [gatsby-plugin-sharp](https://www.gatsbyjs.org/packages/gatsby-plugin-sharp)
+- [gatsby-transformer-sharp](https://www.gatsbyjs.org/packages/gatsby-transformer-sharp)
+- [gatsby-source-filesystem](https://www.gatsbyjs.org/packages/gatsby-source-filesystem)
+- [gatsby-transformer-json](https://www.gatsbyjs.org/packages/gatsby-transformer-json/)
+- [gatsby-transformer-remark](https://www.gatsbyjs.org/packages/gatsby-transformer-remark/)
+- [prop-types](https://www.npmjs.com/package/prop-types)
+- [gatsby-remark-images](https://www.gatsbyjs.org/packages/gatsby-remark-images)
+- [gatsby-responsive-iframe](https://www.gatsbyjs.org/packages/gatsby-remark-responsive-iframe/)
+- [gatsby-plugin-catch-links](https://www.gatsbyjs.org/packages/gatsby-plugin-catch-links/)
+- [gatsby-plugin-twitter](https://www.gatsbyjs.org/packages/gatsby-plugin-twitter/)
+- [gatsby-remark-copy-linked-files](https://www.gatsbyjs.org/packages/gatsby-remark-copy-linked-files/)
+- [gatsby-plugin-web-font-loader](https://www.gatsbyjs.org/packages/gatsby-plugin-web-font-loader/)
 
-## 🧐 What's inside?
-
-A quick look at the top-level files and directories you'll see in a Gatsby project.
-
+## File and Directory Organization
+Included are the following top-level files and directories. For more information on these files, please take a look at [gatsby-starter-hello-world](https://github.com/gatsbyjs/gatsby-starter-hello-world).
+```
     .
     ├── node_modules
     ├── src
+    ├── static
     ├── .gitignore
     ├── .prettierrc
-    ├── gatsby-browser.js
     ├── gatsby-config.js
     ├── gatsby-node.js
-    ├── gatsby-ssr.js
     ├── LICENSE
     ├── package-lock.json
     ├── package.json
-    └── README.md
+    └── README.md 
+```
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+### Source Directory
+The `src` directory is further broken down into the following directories:
+```
+    .
+    ├── src
+    │   ├── components
+    │   ├── content
+    │   ├── images
+    │   ├── pages
+    │   ├── styles
+    │   └── templates
+```
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+- **Components**: Reusable React components.
+- **Content**: Markdown and JSON content files and related images.
+- **Images**: Icon and favicon.
+- **Pages**: Main pages:
+  - Home
+  - Dance
+  - Wellness
+  - Events
+  - Writing
+  - Tech
+  - About
+  - Blog
+  - 404
+- **Styles**: Global sass files including variables.
+- **Templates**: Page templates for dynamically rendered blogposts and project pages.
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+## Site Features
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+### Components and Content
+- [Layout and SEO](#layout-and-seo)
+- [Site Title](#site-title)
+- [Header](#header)
+- [Navigation Menus](#navigation-menus)
+- [Article](#article)
+- [Aside](#aside)
+- [Connect](#connect)
+- [Work Components](#work-components)
+- [Footer](#footer)
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+#### Layout and SEO
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+#### Site Title
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+#### Header
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+#### Navigation Menus
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+#### Article
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+#### Aside
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+#### Connect
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+#### Work Components
 
-## 🎓 Learning Gatsby
+##### Work Cards
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+##### Work Videos
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+##### Work Spotlight
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+##### Tech Cards
 
-## 💫 Deploy
+#### Footer
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
+### Page Templates
+- [Tech Spotlight](#tech-spotlight)
+- [Tech Projects](#tech-projects)
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+#### Tech Spotlight
+
+#### Tech Projects
+
+### Styles
+- [Colors](#colors)
+- [Text](#text)
+- [Layout](#layout)
+
+#### Colors
+
+#### Text
+
+#### Layout
+
