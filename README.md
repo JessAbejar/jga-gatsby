@@ -7,6 +7,7 @@
 - [File and Directory Organization](#file-and-directory-organization)
 - [Site Features](#site-features)
   - [Page Composition](#page-composition)
+  - [Component Composition and Content Data Sourcing](#component-composition-and-content-data-sourcing)
   - [Components and Content](#components-and-content)
   - [Page Templates](#templates)
   - [Global Styles](#global-styles)
@@ -129,6 +130,22 @@ The `src` directory is further broken down into the following directories:
 - **Styles**: Global sass files including variables.
 - **Templates**: Page templates for dynamically rendered blogposts and project pages.
 
+#### Component Directory and File Organization
+
+Components are organized into directories labeled by its component's name and contain a single JavaScript and Sass file.
+
+Example, `<Header>` component:
+```
+    .
+    ├── header
+    │   ├── header.js
+    │   └── header.module.scss
+```
+
+Exceptions include the `connect` directory, which contains an icon library; the `seo` directory, as the `<SEO>` component does not require a stylesheet; and the `work` directory, which contains all the different types of work components and their corresponding Sass files.
+
+#### Content Directory and File Organization 
+
 ## Site Features
 
 ### Page Composition
@@ -146,25 +163,25 @@ All other pages are wrapped in a `<Layout>` component, which includes a `<Header
 
 Tech projects and the tech spotlight are dynamically rendered pages. They use the `<Project>` and `<ProjectSpotlight>` component/page templates and source data from Markdown files located in the `content` directory. They are wrapped in a `<Layout>` component with its content set in inner HTML. For more information, check below for [page templates](#page-templates).
 
+### Component Composition and Content Data Sourcing
+
+The React components used in this project use ES6 arrow functions. If and when possible, the components use semantic HTML tags in the JSX. Each component renders its style from a CSS module specific to that component, importing an scss partial with several variables.
+
+Content can be sourced from various data files using Gatsby's `useStaticQuery` hook and `graphql`. For more information, check the [reference guide on useStaticQuery hook](https://www.gatsbyjs.org/docs/use-static-query/).
+
 ### Components and Content
 The following are components used in this site and with code on how to source data to specific components.
 
-[Layout](#layout)
-[Site Title](#site-title)
-[SEO](#seo)
-[Header](#header)
-[Navigation Menus](#navigation-menus)
-[Article](#article)
-[Aside](#aside)
-[Connect](#connect)
-[Work Components](#work-components)
-[Footer](#footer)
-
-#### Component Composition and Content Data Sourcing
-
-React components are created as functions using ES6 arrow functions. If and when possible, the components use semantic HTML tags in its  Each component renders its style from a CSS module specific to that component, importing an scss partial with several variables.
-
-Content can be sourced from various data files using Gatsby's `useStaticQuery` hook and `graphql`. For more information, check the [reference guide on useStaticQuery hook](https://www.gatsbyjs.org/docs/use-static-query/).
+- [Layout](#layout)
+- [Site Title](#site-title)
+- [SEO](#seo)
+- [Header](#header)
+- [Navigation Menus](#navigation-menus)
+- [Article](#article)
+- [Aside](#aside)
+- [Connect](#connect)
+- [Work Components](#work-components)
+- [Footer](#footer)
 
 #### Layout
 The `<Layout>` component is the main container for all pages and templates except for `index.js`. The component renders the `<Header>`, `<Footer>`, and `<SecondaryFooter>` (nested in `<Footer>`) components and passes children as props.
@@ -246,8 +263,9 @@ Usage in pages (nested in `<Header>`) and on the homepage (nested in `<Layout>`)
 <SEO title="Page Title" /> // Renders "Page Title | Site Title" in tab
 ```
 
-<mark>Future Use</mark>
-For dynamically rendered pages such as blogposts and project pages, custom metadata will be passed as props in the component, which will query each project/post's frontmatter.
+*** Future Use**
+
+For dynamically rendered pages such as blogposts and project pages, custom metadata will be passed as props in the component. The component will query each project/post's frontmatter for the props values.
 
 #### Header
 The `<Header>` component renders the `<SkipToMain>` component (written and returned within the `header.js` file), the `<SiteTitle>` component, the `<MainNavigation>` component, and the `<SecondaryNavigation>` component (nested in `<MainNavigation>`). The `Header` component takes no props.
@@ -258,7 +276,6 @@ Usage in pages (nested in `Layout`):
 ```
 
 #### Navigation Menus
-
 
 #### Article
 
