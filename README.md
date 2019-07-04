@@ -1,19 +1,21 @@
 # JessicaGAbejar.com
 - [Project Summary](#project-summary)
 - [Updates Summary](#updates-summary)
+- [Installation](#installation)
 - [Learning Resources](#learning-resources)
 - [Using Gatsby](#using-gatsby)
 - [File and Directory Organization](#file-and-directory-organization)
 - [Site Features](#site-features)
+  - [Page Composition](#page-composition)
   - [Components and Content](#components-and-content)
   - [Page Templates](#templates)
-  - [Styles](#styles)
+  - [Global Styles](#global-styles)
 
 ## Project Summary
 
 ![Screenshot of JessicaGAbejar.com.](https://jessicagabejar.com/static/9db9da311bd185284080d97e9a5ad5b0/6fbf7/image.png)
 
-JessicaGAbejar.com is my personal website, built using Gatsby.js with React.js, GraphQL, and Sass/SCSS. It highlights all my major interests across various disciplines including dance, wellness, events, writing, and tech.
+JessicaGAbejar.com is my personal website, built using Gatsby.js with React.js, GraphQL, Sass/SCSS (using CSS Modules), and data sourced from JSON and Markdown files. It highlights all my major interests across various disciplines including dance, wellness, events, writing, and tech.
 
 Features include fast site performance, reusable components and design elements, optimized images, content from multiple data sources, SEO, and offline support.
 
@@ -27,17 +29,32 @@ This is a summary of major site updates:
 - 6/17/2019: Tech write-ups all added. Images fixed by uploading directly to Netlify instead of using the build command.
 - 6/6/2019: First deployment. Site includes all main pages (home, dance, wellness, events, writing, tech, and about) and page templates for tech spotlight & project created.
 
+If you see any issues or errors, feel free to file an issue or submit a pull request.
+
+## Installation
+
+To install:
+```
+git clone https://github.com/jessabejar/jga-gatsby
+```
+
+To run development environment locally:
+```
+cd jga-gatsby
+gatsby develop
+```
+
+Development environment is at `localhost:8000`.
+
 ## Learning Resources
 I used this project as an opportunity to learn Gatsby, React, and GraphQL. I used the following tutorials and documentation to help build this site:
 
 - [Gatsby official tutorial](https://www.gatsbyjs.org/tutorial/)
-- [Gatsby official docs](https://www.gatsbyjs.org/docs/)
-- [Gatsby Plugins official docs](https://www.gatsbyjs.org/plugins/)
+- [Gatsby official documentation](https://www.gatsbyjs.org/docs/)
+- [Gatsby Plugins official documentation](https://www.gatsbyjs.org/plugins/)
 - [Andrew Mead's The Great Gatsby Bootcamp Tutorial](https://youtu.be/8t0vNu2fCCM)
 
 ## Using Gatsby
-- [Boilerplate](#boilerplate)
-- [Dependencies and Plugins](#dependencies-and-plugins)
 
 ### Boilerplate
 This site was created using Gatsby.js's [gatsby-starter-hello-world](https://github.com/gatsbyjs/gatsby-starter-hello-world), which is the most basic of Gatsby boilerplates or starters. I also used the following starters as a reference in constructing pages and installing dependencies and plugins:
@@ -75,6 +92,7 @@ The following is a list of dependencies and plugins for this site. For more info
 
 ## File and Directory Organization
 Included are the following top-level files and directories. For more information on these files, please take a look at [gatsby-starter-hello-world](https://github.com/gatsbyjs/gatsby-starter-hello-world).
+
 ```
     .
     ├── node_modules
@@ -92,6 +110,7 @@ Included are the following top-level files and directories. For more information
 
 ### Source Directory
 The `src` directory is further broken down into the following directories:
+
 ```
     .
     ├── src
@@ -106,39 +125,140 @@ The `src` directory is further broken down into the following directories:
 - **Components**: Reusable React components.
 - **Content**: Markdown and JSON content files and related images.
 - **Images**: Icon and favicon.
-- **Pages**: Main pages:
-  - Home
-  - Dance
-  - Wellness
-  - Events
-  - Writing
-  - Tech
-  - About
-  - Blog
-  - 404
+- **Pages**: Main pages including Home, Dance, Wellness, Events, Writing, Tech, About, Blog, and 404.
 - **Styles**: Global sass files including variables.
 - **Templates**: Page templates for dynamically rendered blogposts and project pages.
 
 ## Site Features
 
-### Components and Content
-- [Layout and SEO](#layout-and-seo)
-- [Site Title](#site-title)
-- [Header](#header)
-- [Navigation Menus](#navigation-menus)
-- [Article](#article)
-- [Aside](#aside)
-- [Connect](#connect)
-- [Work Components](#work-components)
-- [Footer](#footer)
+### Page Composition
 
-#### Layout and SEO
+Each page follows a similar composition with a few exceptions. There are currently four types of pages:
+
+1. Homepage
+2. Main pages
+3. Tech Projects
+4. Tech Spotlight
+
+The Homepage is different from all other pages in that it only includes a `<main>` section and a `<Footer>` component (using HTML tag `<footer>`).
+
+All other pages are wrapped in a `<Layout>` component, which includes a `<Header>` (using HTML tag `<header>`) and `<Footer>` component. The `<Layout>` component renders children, which are passed as props. These children are wrapped in a `<main>` HTML tag. They can include various other components, as seen below. These components can be included or ommitted depending on need.
+
+Tech projects and the tech spotlight are dynamically rendered pages. They use the `<Project>` and `<ProjectSpotlight>` component/page templates and source data from Markdown files located in the `content` directory. They are wrapped in a `<Layout>` component with its content set in inner HTML. For more information, check below for [page templates](#page-templates).
+
+### Components and Content
+The following are components used in this site and with code on how to source data to specific components.
+
+[Layout](#layout)
+[Site Title](#site-title)
+[SEO](#seo)
+[Header](#header)
+[Navigation Menus](#navigation-menus)
+[Article](#article)
+[Aside](#aside)
+[Connect](#connect)
+[Work Components](#work-components)
+[Footer](#footer)
+
+#### Component Composition and Content Data Sourcing
+
+React components are created as functions using ES6 arrow functions. If and when possible, the components use semantic HTML tags in its  Each component renders its style from a CSS module specific to that component, importing an scss partial with several variables.
+
+Content can be sourced from various data files using Gatsby's `useStaticQuery` hook and `graphql`. For more information, check the [reference guide on useStaticQuery hook](https://www.gatsbyjs.org/docs/use-static-query/).
+
+#### Layout
+The `<Layout>` component is the main container for all pages and templates except for `index.js`. The component renders the `<Header>`, `<Footer>`, and `<SecondaryFooter>` (nested in `<Footer>`) components and passes children as props.
+
+Usage on pages and templates (main container):
+```
+<Layout>
+    // children
+</Layout>
+```
 
 #### Site Title
+The `<SiteTitle>` component contains the site title and logo linked to the homepage. The component queries the site title text from the site's metadata, which is added to `gatsby-config.js`. For more information, check the [official documentation on the Gatsby Config API](https://www.gatsbyjs.org/docs/gatsby-config/). The `<SiteTitle>` component takes no props.
+
+Site title in `gatsby-config.js` :
+```
+module.exports = {
+    siteMetadata: {
+        title: `Site Title`,
+    },
+}
+```
+
+Site title query in the `<SiteTitle>` component:
+```
+const data = (useStaticQuery(graphql`
+    query {
+        site {
+            siteMetadata {
+                title
+            }
+        }
+    }
+`))
+```
+
+Usage in pages (nested in `<Header>`) and on the homepage:
+```
+<SiteTitle />
+```
+
+#### SEO
+The `<SEO>` component includes the site's metadata. The component uses `React Helmet` and  `gatsby-plugin-react-helmet`. For more information, check the [reference guide on adding metadata using React Helmet and gatsby-plugin-react-helmet](https://www.gatsbyjs.org/docs/add-page-metadata/#using-react-helmet-and-gatsby-plugin-react-helmet).
+
+The component passes the following props: `{ title, description, image, pathname, article, lang }`. Default values are queried from the site's metadata and are overridden when props are passed as it is rendered. `PropTypes` sets default values and checks the props' types.
+
+Site metadata in `gatsby-config.js`:
+```
+module.exports = {
+    siteMetadata: {
+        title: `Site Title`,
+        description: `Default Description`,
+        url: `https://defaultURL.com`,
+        image: `/defaultImg.png`,
+        twitterUsername: `@_defaultTwitterUsername`,
+    },
+}
+```
+
+Site Metadata query in `<SEO>` component:
+```
+const { site } = useStaticQuery(graphql`
+    query {
+        site {
+            siteMetadata {
+                defaultTitle: title
+                defaultDescription: description
+                siteUrl: url
+                defaultImage: image
+                twitterUsername
+            }
+        }
+    }
+`)
+```
+
+Usage in pages (nested in `<Header>`) and on the homepage (nested in `<Layout>`):
+```
+<SEO title="Page Title" /> // Renders "Page Title | Site Title" in tab
+```
+
+<mark>Future Use</mark>
+For dynamically rendered pages such as blogposts and project pages, custom metadata will be passed as props in the component, which will query each project/post's frontmatter.
 
 #### Header
+The `<Header>` component renders the `<SkipToMain>` component (written and returned within the `header.js` file), the `<SiteTitle>` component, the `<MainNavigation>` component, and the `<SecondaryNavigation>` component (nested in `<MainNavigation>`). The `Header` component takes no props.
+
+Usage in pages (nested in `Layout`):
+```
+<Header />
+```
 
 #### Navigation Menus
+
 
 #### Article
 
@@ -159,14 +279,14 @@ The `src` directory is further broken down into the following directories:
 #### Footer
 
 ### Page Templates
-- [Tech Spotlight](#tech-spotlight)
-- [Tech Projects](#tech-projects)
 
 #### Tech Spotlight
 
 #### Tech Projects
 
-### Styles
+#### Blogposts
+
+### Global Styles
 - [Colors](#colors)
 - [Text](#text)
 - [Layout](#layout)
